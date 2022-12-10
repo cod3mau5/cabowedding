@@ -13,17 +13,26 @@
 
         <section class="welcome-text">
             <div class="home-container">
-                <h3 class="good-vibes text-center fs-4">Live the wedding you dream of, be the bride you deserve to be!</h3>
+                <h3 class="main-text text-center fs-4">Live the wedding you dream of , be the bride you deserve to be!</h3>
             </div>
         </section>
 
 		<!-- /section -->
 
 		<section class="presentation">
-            <div class="home-container">                
-                <h1><?php echo esc_attr(get_field('presentation')['title']); ?></h1>
-                <h2><?php echo esc_attr(get_field('presentation')['subtitle']); ?></h2>
-                <?php  esc_attr(the_field('presentation')['description']); ?>
+            <?php 
+                $title=esc_attr(get_field('presentation')['title']);
+                $subtitle=esc_attr(get_field('presentation')["subtitle"]); 
+                $description=get_field('presentation')["description"]; 
+            ?>
+
+            <div class="home-container text-center">                
+                <h1 class="main-text-3"><?php echo $title ?></h1>
+                <h2 class="main-text-2"><?php echo $subtitle ?></h2>
+                <?php echo $description ?>
+
+                <!-- <h2 class="second-text"><?php  esc_attr(the_field('presentation')['subtitle']); ?></h2> -->
+              
             </div>
 		</section>
 
@@ -44,91 +53,73 @@
             </div>
 
         </section> -->
+        <hr data-content="OUR SERVICES" />
 		<section class="our-services">
-
-            <h1 class="text-center">Our services</h1>
-
+            
             <div class="home-container">
                 <div class="cards-wrapper">
                     <div class="card">
-                        <h2>Weddings</h2>
-                        <div class="card-container" style="background-image: url('https://theyesgirls.com/wp-content/uploads/2021/05/Chris-Victoria-Proposal-0752-1-683x1024.jpg');">
+                        <h2 class="title">Weddings</h2>
+                        <div class="card-container" style="background-image: url('https://www.caboweddingservices.com/blog/wp-content/uploads/2018/06/Cabo-Wedding-Services-03-1.jpg');">
+                        <div class="polarized"></div>
                         </div>
                     </div>                 
                     <div class="card">
-                        <h2>Marriage Proposals</h2>
+                        <h2 class="title">Marriage Proposals</h2>
                         <div class="card-container" style="background-image: url('https://theyesgirls.com/wp-content/uploads/2021/05/Chris-Victoria-Proposal-0752-1-683x1024.jpg');">
+                        <div class="polarized"></div>
                         </div>
                     </div>   
                     <div class="card">
-                        <h2>Social Events</h2>
-                        <div class="card-container" style="background-image: url('https://theyesgirls.com/wp-content/uploads/2021/05/Chris-Victoria-Proposal-0752-1-683x1024.jpg');">
+                        <h2 class="title">Social Events</h2>
+                        <div class="card-container" style="background-image: url('https://media.istockphoto.com/id/1133362469/photo/im-having-the-best-time-with-you-guys.jpg?s=612x612&w=0&k=20&c=YyxE1HC7u9CipD6JZuyoIGAuY4cXvUNVATP2605zVDE=');">
+                        <div class="polarized"></div>
                         </div>
                     </div>   
                     <div class="card">
-                        <h2>Birthday Celerations</h2>
-                        <div class="card-container" style="background-image: url('https://theyesgirls.com/wp-content/uploads/2021/05/Chris-Victoria-Proposal-0752-1-683x1024.jpg');">
+                        <h2 class="title">Birthday Celebrations</h2>
+                        <div class="card-container" style="background-image: url('https://st.depositphotos.com/1002111/2556/i/600/depositphotos_25562713-stock-photo-birthday.jpg');">
+                        <div class="polarized"></div>
                         </div>
                     </div>  
                 </div>
             </div>
             
 		</section>
+        <hr data-content="ABOUT OUR WORK" />
+        <section class="long-presentation">
+            <?php 
+                $title=esc_attr(get_field('long-presentation')['title']);
+                $description=get_field('long-presentation')["description"]; 
+            ?>
 
+            <div class="home-container"> 
+                <div class="row">
+                    <div class="column bg-img" style="background-image: url('https://static.wixstatic.com/media/11062b_98db497e028f4de2960e0f1eaa8c484a~mv2.jpeg/v1/fill/w_633,h_740,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_98db497e028f4de2960e0f1eaa8c484a~mv2.jpeg');"></div>                    
+                    <div class="column">
+                        <p>
+                            I make the most important occasions in my clients' lives unforgettable and as enjoyable as possible. Through strategic partnerships formed over the years, I have learned to be flexible and adapt to each client's unique needs and preferences. Are you ready for us to start planning your next event? Leave all your stress and worries to me, and focus on enjoying your next celebration.
+                        </p>
+                    </div>             
+                </div>
+              
+            </div>
+		</section>
+        <hr data-content="&amp;" />
 	</main>
 
 
     <script src="https://player.vimeo.com/api/player.js"></script>
     <script>
-         let iframe = document.querySelector('iframe');
+        let iframe = document.querySelector('iframe');
         let player = new Vimeo.Player(iframe);
-        let playing = true;
-        let simulationTime = 0;
+
 
         window.setInterval(function() {
             player.play();
         },900);
 
         player.setVolume(0);
-
-        player.on('play', function(e) {
-            playing = true;
-        });
-
-        player.on('pause', function(e) {
-            playing = false;
-        });
-
-        /**
-         * Event fired when user want to fast forward
-         */
-        player.on('seeked', function(e) {
-            if (e.seconds > simulationTime) {
-                player.setCurrentTime(simulationTime).then(function(seconds) {
-                }).catch(function(error) {
-                    switch (error.name) {
-                        case 'RangeError':
-                            // The time is less than 0 or greater than the video's duration
-                            break;
-                        default:
-                            // Some other error occurred
-                            break;
-                    }
-                });
-            }
-            else {
-                simulationTime = data.seconds;
-            }
-        });
-
-        /**
-         * Keep time going
-         */
-        window.setInterval(function() {
-            if (playing) {
-                simulationTime++;
-            }
-        }, 1000);
     </script>
 
 

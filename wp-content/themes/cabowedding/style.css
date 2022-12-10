@@ -11,36 +11,21 @@
 	License URI: http://opensource.org/licenses/mit-license.php
 */
 
-/* colors */
-:root {
 
+:root {
+	
+	/* colors */
 	--main-blue: #a4eed6;
 	--main-pink: #F0555F;
 
-
-	/* menu colors */
-    --color-white-100: hsl(206, 0%, 100%);
-    --color-white-200: hsl(206, 0%, 90%);
-    --color-white-300: hsl(206, 0%, 80%);
-    --color-white-400: hsl(206, 0%, 65%);
-    --color-white-500: hsl(206, 0%, 50%);
-    --color-black-100: hsl(217, 30%, 18%);
-    --color-black-200: hsl(217, 27%, 15%);
-    --color-black-300: hsl(217, 27%, 12%);
-    --color-black-400: hsl(217, 52%, 9%);
-    --color-blue-100: hsl(215, 97%, 87%);
-    --color-blue-200: hsl(215, 96%, 78%);
-    --color-blue-300: hsl(215, 94%, 68%);
-    --color-blue-400: hsl(215, 91%, 60%);
-    --color-blue-500: hsl(215, 83%, 53%);
-    --color-blue-600: hsl(215, 76%, 48%);
-
-    --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
-    0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--fontMenu: 'La Belle Aurore';
+	--mainText: 'Good Vibes';
+	--mainText2:'Handlee';
+	--mainText3:'Tangerine';
+	/* --secondText:'Actor'; */
+	--secondText:'Merienda';
+	--secondText2:'Poiret One';
+	
 }
 
 /*------------------------------------*\
@@ -64,11 +49,32 @@ body {
 	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color:#444;
 }
+main{
+	background: #eee;
+}
 
 /* helpers */
-.good-vibes{
-	font-family: 'Good Vibes';
+.main-text{
+	font-family: var(--mainText);
 }
+.main-text-2{
+	font-family: var(--mainText2);
+}
+.main-text-3{
+	font-family: var(--mainText3);
+}
+.second-text{
+	font-family: var(--secondText);
+}
+.text-shadow{
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.57);
+}
+.bg-img{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .text-center{
 	text-align: center;
 }
@@ -142,6 +148,48 @@ input:focus {
 	font-display: swap;
 	src: url('fonts/GreatVibes-Regular.ttf') format('truetype');;
 }
+
+@font-face {
+	font-family: 'Actor';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('fonts/Actor-Regular.ttf') format('truetype');;
+}
+
+@font-face {
+	font-family: 'Handlee';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('fonts/Handlee-Regular.ttf') format('truetype');;
+}
+
+@font-face {
+	font-family: 'Poiret One';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('fonts/PoiretOne-Regular.ttf') format('truetype');;
+}
+
+@font-face {
+	font-family: 'Merienda';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('fonts/Merienda-VariableFont_wght.ttf') format('truetype');;
+}
+
+@font-face {
+	font-family: 'Tangerine';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('fonts/Tangerine-Bold.ttf') format('truetype');;
+}
+
+
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/
@@ -179,7 +227,7 @@ input:focus {
 	line-height: 1.777;
 }
 .site-header .barra-navegacion ul li a{
-	font-family: 'La Belle Aurore', cursive;
+	font-family: var(--fontMenu), cursive;
 	font-weight: bolder;
 	font-size: 2.777rem;
 	color: var(--main-pink);
@@ -200,6 +248,41 @@ input:focus {
 .sidebar {
 	display: inherit;
 }
+/* divider */
+hr {
+	height: 2px;
+	overflow: visible;
+	color: var(--main-pink);
+	position: relative;
+	margin: 2em auto;
+	border: none;
+	padding-top: 90px;
+	padding-bottom: 50px;
+	font-size: .777rem;
+}
+hr::before {
+	content: "";
+	background: linear-gradient(to right, transparent, var(--main-pink), transparent);
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+}
+hr[data-content] {
+	text-align: center;
+}
+hr[data-content]::after {
+	content: attr(data-content);
+	position: relative;
+	background: #eee;
+	padding: 0 1.5rem;
+	top: -0.475em;
+	font-size: 3em;
+	line-height: 1;
+	font-family: serif;
+	font-style: italic;
+	color: currentColor;
+}
 /* footer */
 .footer {
 	display: inherit;
@@ -217,28 +300,54 @@ input:focus {
 	background: -webkit-radial-gradient(circle, hsla(356, 73%, 78%, 1) 13%, hsla(356, 77%, 75%, 1) 62%, hsla(356, 78%, 73%, 1) 78%);
 	padding: 4rem 0px;
 }
-.welcome-text .good-vibes{
+.welcome-text h3{
 	color: var(--main-blue);
 	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.57);
 }
+
+/* presentation */
 .presentation{
-	padding: 123px 0px;
+	padding-top: 77px;
+	padding-bottom: 22px;
 }
 .presentation h1{
+	font-size: 5.777rem;
+	line-height: 1;
 	color: var(--main-pink);
 }
 .presentation h2{
+	font-size: 2rem;
 	color: var(--main-blue);
+	text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.79);
+}
+.presentation p,.presentation p *{
+	font-size: 1.777rem;
+	font-family: var(--secondText);
 }
 
+/* our services */
 .our-services .cards-wrapper{
-	display:grid;
-	grid-template-columns: 1fr 1fr;
+	display:flex;
+	flex-direction: column;
 }
 .our-services .card{
+	position: relative;
 	height: 300px;
 	width: 100%;
 	padding: 1rem;
+}
+.our-services .card .title{
+	text-align: center;
+    font-size: 5rem;
+    font-family: var(--mainText3);
+    color: var(--main-blue);
+    line-height: .777;
+	text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.89);
+    position: absolute;
+    top: 50%;
+	left: 50%; 
+    transform: translate(-50%, -50%);
+	z-index: 1;
 }
 .our-services .card .card-container{
 	width: 100%;
@@ -247,17 +356,42 @@ input:focus {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+.our-services .card .card-container .polarized{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.444);
+}
+
+/* long presentation */
+.long-presentation{
+	padding: 2rem;
+}
+.long-presentation .row{
+	width: 100%;
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.long-presentation .row{
+	display: flex;
+	flex-direction: column;
+}
+.long-presentation .row .column:nth-child(1){
+	width: 100%;
+	min-height: 450px;
+}
+.long-presentation .row .column:nth-child(2) p{
+	font-size: 1.777rem;
+	font-family: var(--secondText2);
+	padding: 3rem 1rem;
+}
 
 
 /*------------------------------------*\
     IMAGES
 \*------------------------------------*/
-
-
-
-
-/* @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap'); */
-
 
 
 /*------------------------------------*\
@@ -421,7 +555,7 @@ ul.menu .menu-item a{
 
 @media only screen and (min-width:840px) and (max-width:1024px) {
     ul.menu .menu-item a{
-        font-size: 1.45rem!important;
+        font-size: 2.5rem!important;
     }
 }
 .menu.is-active ul{
@@ -641,6 +775,13 @@ ul.menu .menu-item a{
 
 }
 @media only screen and (min-width:840px) {
+	hr{
+		font-size: 1.2rem;
+	}
+	/* 
+		### HOME ###
+	*/
+	/* header */
 	.site-header .barra-navegacion{
 		display: flex;
 		justify-content: space-between;
@@ -652,6 +793,53 @@ ul.menu .menu-item a{
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+	}
+
+	/* our services */
+	.our-services .cards-wrapper{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.our-services .card{
+		height: 300px;
+		width: 100%;
+		padding: 1rem;
+	}
+	.our-services .card .card-container{
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+
+	/* long-presentation */
+	.long-presentation{
+		padding: 2rem;
+	}
+	.long-presentation .row{
+		width: 100%;
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+	.long-presentation .row{
+		min-height: 600px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.long-presentation .row .column{
+		display: flex;
+		align-items: center;
+	}
+	.long-presentation .row .column:nth-child(2) p{
+		font-size: 2.5rem;
+		font-family: var(--secondText2);
+		padding: 3rem;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
 	}
 
 }
