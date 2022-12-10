@@ -1,0 +1,818 @@
+/*
+	Theme Name: Cabo Wedding
+	Theme URI:
+	Description: Weddings WordPress Theme
+	Version: 1.4.3
+	Author: codemau5 (@codemau5) or (cod3mau5)
+	Author URI: http://codemau5.com
+	Tags: Weeding, Photograpy, HTML5, CSS3, Resposnsive
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+/* colors */
+:root {
+
+	--main-blue: #a4eed6;
+	--main-pink: #F0555F;
+
+
+	/* menu colors */
+    --color-white-100: hsl(206, 0%, 100%);
+    --color-white-200: hsl(206, 0%, 90%);
+    --color-white-300: hsl(206, 0%, 80%);
+    --color-white-400: hsl(206, 0%, 65%);
+    --color-white-500: hsl(206, 0%, 50%);
+    --color-black-100: hsl(217, 30%, 18%);
+    --color-black-200: hsl(217, 27%, 15%);
+    --color-black-300: hsl(217, 27%, 12%);
+    --color-black-400: hsl(217, 52%, 9%);
+    --color-blue-100: hsl(215, 97%, 87%);
+    --color-blue-200: hsl(215, 96%, 78%);
+    --color-blue-300: hsl(215, 94%, 68%);
+    --color-blue-400: hsl(215, 91%, 60%);
+    --color-blue-500: hsl(215, 83%, 53%);
+    --color-blue-600: hsl(215, 76%, 48%);
+
+    --shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+/* html element 62.5% font-size for REM use */
+html {
+	font-size:62.5%;
+}
+body {
+	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color:#444;
+}
+
+/* helpers */
+.good-vibes{
+	font-family: 'Good Vibes';
+}
+.text-center{
+	text-align: center;
+}
+
+.fs-1{
+	font-size: 1rem;
+}
+.fs-2{
+	font-size: 2rem;
+}
+.fs-3{
+	font-size: 3rem;
+}
+.fs-4{
+	font-size: 4rem;
+}
+
+/* clear */
+.clear:before,
+.clear:after {
+    content:' ';
+    display:table;
+}
+
+.clear:after {
+    clear:both;
+}
+.clear {
+    *zoom:1;
+}
+img {
+	max-width:100%;
+	vertical-align:bottom;
+}
+a {
+	color:#444;
+	text-decoration:none;
+}
+a:hover {
+	color:#444;
+}
+a:focus {
+	outline:0;
+}
+a:hover,
+a:active {
+	outline:0;
+}
+h1,h2,h3,h4,h5 {
+    margin: -1px!important;
+}
+input:focus {
+	outline:0;
+	border:1px solid #04A4CC;
+}
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+@font-face {
+	font-family: 'La Belle Aurore';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src:url('fonts/LaBelleAurore-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Good Vibes';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('fonts/GreatVibes-Regular.ttf') format('truetype');;
+}
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+/* wrapper */
+.wrapper {
+	max-width:1280px;
+	width:95%;
+	margin:0 auto;
+	position:relative;
+}
+.container {
+    max-width: 1440px;
+    width: 95%;
+    margin: 0 auto;
+}
+.home-container {
+    max-width: 968px;
+    width: 75%;
+    margin: 0 auto;
+}
+/* header */
+.site-header {
+	display: inherit;
+	border-bottom: 3.5px dotted var(--main-pink);
+	border-bottom-style: solid;
+}
+.site-header .barra-navegacion{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 3rem 1rem;
+}
+.site-header .barra-navegacion ul li{
+	list-style: none;
+	line-height: 1.777;
+}
+.site-header .barra-navegacion ul li a{
+	font-family: 'La Belle Aurore', cursive;
+	font-weight: bolder;
+	font-size: 2.777rem;
+	color: var(--main-pink);
+}
+
+/* logo */
+.logo {
+	display: inherit;
+}
+.logo-img {
+	display: inherit;
+}
+/* nav */
+.nav {
+	display: inherit;
+}
+/* sidebar */
+.sidebar {
+	display: inherit;
+}
+/* footer */
+.footer {
+	display: inherit;
+}
+
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+
+/* HOME */
+.welcome-text{
+	background: hsla(356, 73%, 78%, 1);
+	background: radial-gradient(circle, hsla(356, 73%, 78%, 1) 13%, hsla(356, 77%, 75%, 1) 62%, hsla(356, 78%, 73%, 1) 78%);
+	background: -moz-radial-gradient(circle, hsla(356, 73%, 78%, 1) 13%, hsla(356, 77%, 75%, 1) 62%, hsla(356, 78%, 73%, 1) 78%);
+	background: -webkit-radial-gradient(circle, hsla(356, 73%, 78%, 1) 13%, hsla(356, 77%, 75%, 1) 62%, hsla(356, 78%, 73%, 1) 78%);
+	padding: 4rem 0px;
+}
+.welcome-text .good-vibes{
+	color: var(--main-blue);
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.57);
+}
+.presentation{
+	padding: 123px 0px;
+}
+.presentation h1{
+	color: var(--main-pink);
+}
+.presentation h2{
+	color: var(--main-blue);
+}
+
+.our-services .cards-wrapper{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+}
+.our-services .card{
+	height: 300px;
+	width: 100%;
+	padding: 1rem;
+}
+.our-services .card .card-container{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap'); */
+
+
+
+/*------------------------------------*\
+	DROPDOWN MENU 
+\*------------------------------------*/
+
+
+/* The hidden-at-first drop menus */
+.drop-menu {
+    display: flex;
+    flex-direction: column; /* This never changes */
+    align-items: center;
+    width: 100%; /* Allows sub buttons to stretch across button width in main-menu*/
+    transition: max-height .4s, opacity .3s;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden; /* Keeps links in drop menu from displaying until height is large enough */
+    position: unset;
+}
+
+
+.drop-menu > .menu-button {
+    height: 100%;
+    transition: transform .4s;
+    transform: translateY(-300%);
+    background:rgb(251,133,0); /* Makes the menu effects visible on close */
+    margin: 6px 0;
+    padding: 5px 8px;
+}
+
+/* Makes for easy identifying when the drop menu is open */
+.dropdown-wrapper{
+    text-align: center;
+}
+.dropdown-wrapper:hover > .menu-button {
+    color: rgb(251,133,0)!important;
+}
+
+
+/* The dropdown-wrapper wraps both the .main-menu button and drop down menu */
+/* Expands .drop-menu to children height, not setting an expicit height allows variable # of buttons */
+.dropdown-wrapper:hover .drop-menu{
+    max-height: 300px;
+    opacity: 1;
+}
+
+/* The specifity keeps styles from affecting main menu button */
+.dropdown-wrapper:hover > .drop-menu .menu-button {
+transform: translateY(0%);
+}
+
+
+
+/*====================================
+MEDIA QUERIES
+====================================*/
+
+@media (min-width: 550px) {
+    /*====================================
+    DROP-MENU EFFECTS (LARGER SCREENS)
+    ====================================*/
+    /* Resets dropdown styles to not affect the effects. Overflow still set to hidden allows for menu effects like sliding in */
+    .effect {
+        transition: max-height 0s;
+        opacity: 1;
+        background: transparent;
+    }
+    .effect .menu-button {
+        transform: translateY(0%);
+    }
+
+
+    .scissor .menu-button{
+        transform: translateX(-100%);
+    }
+    /* Selects every other menu button to slide the opposite way */
+    .scissor .menu-button:nth-child(2n+1) {
+        transform: translateX(100%);
+    }
+    .dropdown-wrapper:hover .scissor .menu-button {
+        transform: translateX(0%);
+    }
+
+    .fade-in .menu-button {
+        transition: opacity .5s;
+        opacity: 0;
+    }
+    .dropdown-wrapper:hover .fade-in .menu-button {
+        opacity: 1;
+    }
+
+    .header-container {
+        width: 90%;
+    }
+
+    .header-container {
+        height: 200px;
+        justify-content: space-between; /* Pushes logo to top, nav bar all the way down */
+    }
+
+    .main-menu {
+        flex-direction: row; /* Horizontal main menu buttons */
+        align-items: flex-start; /* Makes the top of the 'dropdown-wrapper' div stay flush with button top because it's aligned on the cross-axis */
+        height: 48px; /* Setting the height allows the dropdown outside of it's parent's bounds, therefore not compensated for by the flex. */
+        margin: 0;
+    }
+
+    .main-menu > .menu-button {
+        width: 23%;
+        max-width: 150px;
+    }
+
+}
+
+@media (min-width: 850px) {
+    .header-container {
+        flex-direction: row; /* Places logo on the same line as .main-menu */
+        justify-content: space-around;
+        height: 160px;
+        }
+
+    .main-menu {
+            width: 60%;
+        justify-content: space-between;
+    }
+}
+
+
+ul.menu{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4rem;
+    box-shadow: none;
+    border: 0;
+}
+ul.menu .menu-item{
+    color: rgb(2,48,71)!important;
+}
+ul.menu a.item:hover{
+    color: rgb(251,133,0)!important;
+}
+ul.menu .dropdown.item:hover{
+    color: rgb(251,133,0);
+}
+ul.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-medium);
+    transition: all 0.4s ease-in-out;
+}
+ul.menu .menu-item a{
+    font-size: 1.5rem;
+    margin: 0 auto!important;
+}
+
+@media only screen and (min-width:840px) and (max-width:1024px) {
+    ul.menu .menu-item a{
+        font-size: 1.45rem!important;
+    }
+}
+.menu.is-active ul{
+    left: 0;
+}
+#menu-menu-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1.25rem;
+    margin-top: 7rem;
+	background-color: rgba(255,255,255,0.9);
+	margin: 0;
+	padding: 0;
+}
+.menu-link {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: inherit;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+@media only screen and (min-width: 840px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: 1.5fr 3fr;
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+        max-width: 1127px;
+
+    }
+    ul.menu {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+        padding: 0 1rem;
+        margin-right: auto;
+        background: none;
+        box-shadow: none;
+        transition: none;
+    }
+    #menu-menu-principal {
+		width: 100%;
+        display: flex;
+        flex-direction: row;
+        -moz-column-gap: 2rem;
+        column-gap: 2rem;
+        margin: 0;
+		justify-content: space-around;
+    }
+    .menu-link {
+        text-transform: capitalize;
+    }
+
+    .drop-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transition: max-height .4s, opacity .3s;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        position: fixed;
+        left: 0px;
+        margin-top: 10px;
+    }
+    .drop-menu > .menu-button{
+        position: relative;
+        left: -68px;
+    }
+}
+
+.logo{
+    height:auto!important;
+    width: 244px!important;
+}
+@media (max-width: 840px) {
+    .ui.fixed.menu .ui.container{
+        display: none!important;
+    }
+    .ui.fixed.menu .ui.container.mobile{
+        display: flex!important;
+        flex-direction: column;
+    }
+    .navbar{
+        padding: 0 1.2rem!important;
+    }
+    .logo{
+        height: auto!important;
+        width: 185px!important;
+    }
+    .header{
+        height: 85px;
+    }
+}
+
+.burguer-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: end;
+}
+.burguer-box{
+	display: flex;
+    flex-direction: column;
+}
+.burguer-wrapper small{
+	align-self: center;
+	color: var(--main-pink);
+	font-weight: bolder;
+}
+
+.burger {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    order: 1;
+    z-index: 12;
+    width: 3rem;
+    height: 1.5rem;
+    border: none;
+    outline: none;
+    background: none;
+    visibility: visible;
+    transform: rotate(0deg);
+    transition: 0.35s ease;
+	float:right;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 840px) {
+    .logo{
+		height:auto!important;
+		width: 285px!important;
+	}
+    .burger {
+        display: none;
+        visibility: hidden;
+	}
+	.burguer-wrapper small{
+		display: none;
+	}
+}
+.burger-line {
+    display: flex;
+    position: relative;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    border: none;
+    outline: none;
+    opacity: 1;
+    transform: rotate(0deg);
+    background-color: var(--main-pink);
+    transition: 0.25s ease-in-out;
+}
+
+.burger-line:nth-child(1) {
+    top: 0px;
+}
+.burger-line:nth-child(2) {
+    top: 0.5rem;
+}
+.burger-line:nth-child(3) {
+    top: 1rem;
+}
+.burger.is-active .burger-line:nth-child(1) {
+    top: 1.2rem;
+    transform: rotate(135deg);
+}
+.burger.is-active .burger-line:nth-child(2) {
+    right: -1.5rem;
+    opacity: 0;
+    visibility: hidden;
+}
+.burger.is-active .burger-line:nth-child(3) {
+    top: 0.5rem;
+    transform: rotate(-135deg);
+}
+.no-border{
+    border: 0px transparent solid!important;
+}
+.no-border::before{
+    content: ''!important;
+    width: 0px!important;
+    background: transparent!important;
+}
+.ui.container.mobile{
+    display: none;
+}
+
+
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (min-width:320px) {
+	
+}
+@media only screen and (min-width:480px) {
+
+}
+@media only screen and (min-width:768px) {
+
+}
+@media only screen and (min-width:840px) {
+	.site-header .barra-navegacion{
+		display: flex;
+		justify-content: space-between;
+		padding: 3rem;
+	}
+	.site-header .barra-navegacion #menu{
+		width: 55%;
+		padding: 0;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+}
+@media only screen and (min-width:1024px) {
+
+}
+@media only screen and (min-width:1140px) {
+
+}
+@media only screen and (min-width:1280px) {
+
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+	   only screen and (min-resolution:144dpi) {
+
+}
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-webkit-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+::-moz-selection {
+	background:#04A4CC;
+	color:#FFF;
+	text-shadow:none;
+}
+
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+
+.alignnone {
+	margin:5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+	display:block;
+	margin:5px auto 5px auto;
+}
+.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.alignright {
+	float:right;
+	margin:5px 0 20px 20px;
+}
+a img.alignnone {
+	margin:5px 20px 20px 0;
+}
+a img.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.aligncenter {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.wp-caption {
+	background:#FFF;
+	border:1px solid #F0F0F0;
+	max-width:96%;
+	padding:5px 3px 10px;
+	text-align:center;
+}
+.wp-caption.alignnone {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+	margin:5px 20px 20px 0;
+}
+.wp-caption.alignright {
+	margin:5px 0 20px 20px;
+}
+.wp-caption img {
+	border:0 none;
+	height:auto;
+	margin:0;
+	max-width:98.5%;
+	padding:0;
+	width:auto;
+}
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	font-size:11px;
+	line-height:17px;
+	margin:0;
+	padding:0 4px 5px;
+}
+.sticky {
+	display: inherit;
+}
+.bypostauthor {
+	display: inherit;
+}
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+@media print {
+	* {
+		background:transparent !important;
+		color:#000 !important;
+		box-shadow:none !important;
+		text-shadow:none !important;
+	}
+	a,
+	a:visited {
+		text-decoration:underline;
+	}
+	a[href]:after {
+		content:" (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content:" (" attr(title) ")";
+	}
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content:"";
+	}
+	pre,blockquote {
+		border:1px solid #999;
+		page-break-inside:avoid;
+	}
+	thead {
+		display:table-header-group;
+	}
+	tr,img {
+		page-break-inside:avoid;
+	}
+	img {
+		max-width:100% !important;
+	}
+	@page {
+		margin:0.5cm;
+	}
+	p,
+	h2,
+	h3 {
+		orphans:3;
+		widows:3;
+	}
+	h2,
+	h3 {
+		page-break-after:avoid;
+	}
+}
