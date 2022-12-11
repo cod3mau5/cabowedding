@@ -35,7 +35,7 @@ if (function_exists('add_theme_support'))
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
     add_theme_support('custom-background', array(
 	'default-color' => 'FFF',
-	'default-image' => get_template_directory_uri() . '/img/bg.jpg'
+// 	'default-image' => get_template_directory_uri() . '/img/bg.jpg'
     ));
 
     // Add Support for Custom Header - Uncomment below if you're going to use
@@ -46,9 +46,9 @@ if (function_exists('add_theme_support'))
 	'width'				=> 1000,
 	'height'			=> 198,
 	'random-default'		=> false,
-	'wp-head-callback'		=> $wphead_cb,
-	'admin-head-callback'		=> $adminhead_cb,
-	'admin-preview-callback'	=> $adminpreview_cb
+// 	'wp-head-callback'		=> $wphead_cb,
+// 	'admin-head-callback'		=> $adminhead_cb,
+// 	'admin-preview-callback'	=> $adminpreview_cb
     ));
 
     // Enables post and comment RSS feed links to head

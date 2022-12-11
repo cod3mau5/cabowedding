@@ -20,13 +20,13 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'cabowedding' );
+define( 'DB_NAME', 'u606769855_cabowedding' );
 
 /** Database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'u606769855_cabowedding' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'root' );
+define( 'DB_PASSWORD', 'Red_hat_4944' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
