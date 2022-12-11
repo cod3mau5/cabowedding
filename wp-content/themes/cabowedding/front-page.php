@@ -53,7 +53,7 @@
             </div>
 
         </section> -->
-        <hr data-content="OUR SERVICES" />
+        <hr class="main-text" data-content="Our Services" />
 		<section class="our-services">
             
             <div class="home-container">
@@ -86,7 +86,7 @@
             </div>
             
 		</section>
-        <hr data-content="ABOUT OUR WORK" />
+        <hr data-content="About Our Work" />
         <section class="long-presentation">
             <?php 
                 $title=esc_attr(get_field('long-presentation')['title']);
@@ -105,7 +105,40 @@
               
             </div>
 		</section>
-        <hr data-content="&amp;" />
+        <hr data-content="Wedding Videos" />
+
+        <section class="our-services">
+            
+            <div class="home-container">
+                <div class="cards-wrapper">
+                    <div class="card">
+                        <h2 class="title">Weddings</h2>
+                        <div class="card-container" style="background-image: url('https://www.caboweddingservices.com/blog/wp-content/uploads/2018/06/Cabo-Wedding-Services-03-1.jpg');">
+                        <div class="polarized"></div>
+                        </div>
+                    </div>                 
+                    <div class="card">
+                        <h2 class="title">Marriage Proposals</h2>
+                        <div class="card-container" style="background-image: url('https://theyesgirls.com/wp-content/uploads/2021/05/Chris-Victoria-Proposal-0752-1-683x1024.jpg');">
+                        <div class="polarized"></div>
+                        </div>
+                    </div>   
+                    <div class="card">
+                        <h2 class="title">Social Events</h2>
+                        <div class="card-container" style="background-image: url('https://media.istockphoto.com/id/1133362469/photo/im-having-the-best-time-with-you-guys.jpg?s=612x612&w=0&k=20&c=YyxE1HC7u9CipD6JZuyoIGAuY4cXvUNVATP2605zVDE=');">
+                        <div class="polarized"></div>
+                        </div>
+                    </div>   
+                    <div class="card">
+                        <h2 class="title">Birthday Celebrations</h2>
+                        <div class="card-container" style="background-image: url('https://st.depositphotos.com/1002111/2556/i/600/depositphotos_25562713-stock-photo-birthday.jpg');">
+                        <div class="polarized"></div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            
+		</section>
 	</main>
 
 
