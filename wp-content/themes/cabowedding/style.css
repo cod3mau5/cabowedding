@@ -416,6 +416,92 @@ hr[data-content]::after {
 	background-color: rgba(0,0,0,0.444);
 }
 
+
+/* wedding videos */
+section.wedding-videos{
+	padding: 0px 0px 100px 0px;
+}
+.wedding-videos .cards-wrapper{
+	display:flex;
+	flex-direction: column;
+}
+.wedding-videos .card{
+	height: fit-content;
+	width: 100%;
+	padding: 1rem;
+	text-align: center;
+}
+.wedding-videos .card .title{
+	text-align: center;
+    font-size: 5rem;
+    font-family: var(--mainText3);
+    color: var(--main-pink);
+    line-height: .777;
+	margin-top: 1.5rem!important;
+}
+.wedding-videos .card img{
+	height: 100%;
+    width: 100%;
+	clip-path: ellipse(83% 79% at 50% 95%);
+	object-fit: cover;
+}
+.wedding-videos .card .card-container {
+	position: relative;
+	height: 277px;
+}
+.wedding-videos .card svg{
+	position: absolute;
+    transform: translate(-170%, 100%);
+	width: 40%;
+	height: 40%;
+	fill: transparent;
+	cursor: pointer;
+}
+.wedding-videos .card p{
+	margin-bottom:0px;
+}
+
+.wedding-videos .card .card-container .polarized{
+    position: absolute;
+	top: 0px;
+	height: 100%;
+    width: 100%;
+	clip-path: ellipse(83% 79% at 50% 95%);
+	background-color: transparent;
+	cursor:pointer;
+}
+.wedding-videos .card svg:hover, .wedding-videos .card .card-container .polarized:hover ~ svg{
+	fill: white;
+	z-index: 1;
+}
+/* call to action */
+.call-to-action{
+	color: white;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.call-to-action h2{
+	font-size: 2.5rem;
+	text-shadow: -1px -1px 2px rgba(150, 150, 150, 1);
+}
+.call-to-action button{
+	background-color: transparent;
+	border: 2.5px solid #fff;
+	width: 150px;
+	font-size: 1.7rem;
+	color: white;
+	font-weight: bolder;
+	padding:1.2rem 1rem;
+	margin-top: 2rem;
+}
+.call-to-action button:hover{
+	background-color: white;
+	transition: ease-in-out;
+	color: #444;
+}
 /* long presentation */
 .long-presentation{
 	padding: 2rem;
@@ -889,6 +975,20 @@ ul.menu .menu-item a{
 		background-repeat: no-repeat;
 		background-position: center;
 	}
+
+	/* wedding videos */
+	.wedding-videos .cards-wrapper{
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.wedding-videos .card{
+		width: 100%;
+		padding: 1rem;
+	}
+	.wedding-videos .card .card-container{
+		width: 100%;
+	}
+
 
 
 	/* long-presentation */

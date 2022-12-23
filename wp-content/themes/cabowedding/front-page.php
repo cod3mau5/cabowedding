@@ -105,40 +105,119 @@
               
             </div>
 		</section>
+
         <hr data-content="Wedding Videos" />
 
-        <section class="our-services">
+        <section class="wedding-videos">
             
             <div class="home-container">
                 <div class="cards-wrapper">
                     <div class="card">
-                        <h2 class="title">Weddings</h2>
-                        <div class="card-container" style="background-image: url('https://www.caboweddingservices.com/blog/wp-content/uploads/2018/06/Cabo-Wedding-Services-03-1.jpg');">
-                        <div class="polarized"></div>
+                        <div class="card-container">
+                            <img src="https://pictime1eus1public.azureedge.net/pictures/23/952/23952451/homepage/homepage.jpg?rs=132932211576423715">
+                            <div class="polarized"></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                                <polygon class="play-btn__svg" points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69"/>
+                                <path class="play-btn__svg" d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z"/>
+                            </svg> 
                         </div>
+                        <h2 class="title">Andrea & Todd</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A in esse, saepe assumenda aliquam amet iusto neque.
+                            Eligendi, eos reiciendis a sunt magnam, perferendis itaque aspernatur eius praesentium, minima est!
+                        </p>
                     </div>                 
                     <div class="card">
-                        <h2 class="title">Marriage Proposals</h2>
-                        <div class="card-container" style="background-image: url('https://theyesgirls.com/wp-content/uploads/2021/05/Chris-Victoria-Proposal-0752-1-683x1024.jpg');">
-                        <div class="polarized"></div>
+                        <div class="card-container">
+                            <img src="https://pictimecloudaf-a.azureedge.net/pictures/18/484/18484609/homepage/homepage.jpg?rs=132590247400350223">
+                            <div class="polarized"></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                                <polygon class="play-btn__svg" points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69"/>
+                                <path class="play-btn__svg" d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z"/>
+                            </svg> 
                         </div>
+                        <h2 class="title">Ella & Josh</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A in esse, saepe assumenda aliquam amet iusto neque.
+                            Eligendi, eos reiciendis a sunt magnam, perferendis itaque aspernatur eius praesentium, minima est!
+                        </p>
                     </div>   
                     <div class="card">
-                        <h2 class="title">Social Events</h2>
-                        <div class="card-container" style="background-image: url('https://media.istockphoto.com/id/1133362469/photo/im-having-the-best-time-with-you-guys.jpg?s=612x612&w=0&k=20&c=YyxE1HC7u9CipD6JZuyoIGAuY4cXvUNVATP2605zVDE=');">
-                        <div class="polarized"></div>
+                        <div class="card-container">
+                            <img src="https://pictime1eus1public.azureedge.net/pictures/19/663/19663091/homepage/homepage.jpg?rs=132680940528304883">
+                            <div class="polarized"></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                                <polygon class="play-btn__svg" points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69"/>
+                                <path class="play-btn__svg" d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z"/>
+                            </svg> 
                         </div>
+                        <h2 class="title">Whitnee & Jeremy</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A in esse, saepe assumenda aliquam amet iusto neque.
+                            Eligendi, eos reiciendis a sunt magnam, perferendis itaque aspernatur eius praesentium, minima est!
+                        </p>
                     </div>   
                     <div class="card">
-                        <h2 class="title">Birthday Celebrations</h2>
-                        <div class="card-container" style="background-image: url('https://st.depositphotos.com/1002111/2556/i/600/depositphotos_25562713-stock-photo-birthday.jpg');">
-                        <div class="polarized"></div>
+                        <div class="card-container">
+                            <img src="https://pictime1eus1public.azureedge.net/pictures/21/70/21070293/homepage/homepage.jpg?rs=132776895848323135">
+                            <div class="polarized"></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                                <polygon class="play-btn__svg" points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69"/>
+                                <path class="play-btn__svg" d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z"/>
+                            </svg> 
                         </div>
+                        <h2 class="title">Mei & Joseph</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A in esse, saepe assumenda aliquam amet iusto neque.
+                            Eligendi, eos reiciendis a sunt magnam, perferendis itaque aspernatur eius praesentium, minima est!
+                        </p>
                     </div>  
+                    <div class="card">
+                        <div class="card-container">
+                            <img src="https://pictime1eus1public.azureedge.net/pictures/20/608/20608547/homepage/homepage.jpg?rs=132877138325005471">
+                            <div class="polarized"></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                                <polygon class="play-btn__svg" points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69"/>
+                                <path class="play-btn__svg" d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z"/>
+                            </svg> 
+                        </div>
+                        <h2 class="title">Lisa & Kevin</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A in esse, saepe assumenda aliquam amet iusto neque.
+                            Eligendi, eos reiciendis a sunt magnam, perferendis itaque aspernatur eius praesentium, minima est!
+                        </p>
+                    </div>                 
+                    <div class="card">
+                        <div class="card-container">
+                            <img src="https://pictime1eus1public.azureedge.net/pictures/20/538/20538644/homepage/homepage.jpg?rs=132742987844442852">
+                            <div class="polarized"></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                                <polygon class="play-btn__svg" points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69"/>
+                                <path class="play-btn__svg" d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z"/>
+                            </svg> 
+                        </div>
+                        <h2 class="title">Christy & Alex</h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A in esse, saepe assumenda aliquam amet iusto neque.
+                            Eligendi, eos reiciendis a sunt magnam, perferendis itaque aspernatur eius praesentium, minima est!
+                        </p>
+                    </div> 
                 </div>
             </div>
             
 		</section>
+
+        <hr data-content="Ready?" />
+        <section class="call-to-action" style="
+        background-image: linear-gradient(to bottom, #eee, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0)), url('https://images.squarespace-cdn.com/content/v1/5e5a89dc2b74f201b6b58434/b1fabdfa-d797-456b-9a7d-bb328c2ca470/DSC05422+2.jpg?format=2500w');
+        width: 100%;
+        height: 633px;
+        background-size: cover;">
+            <h2 class="text-center">Contact me about your wedding or couple session so we can start dreaming about it together!</h2>
+            <button>LET'S DO THIS!</button>
+        </section>
+        <hr data-content="Our Location" />
+        <section id="map"></section>
 	</main>
 
 
@@ -146,7 +225,6 @@
     <script>
         let iframe = document.querySelector('iframe');
         let player = new Vimeo.Player(iframe);
-
 
         window.setInterval(function() {
             player.play();

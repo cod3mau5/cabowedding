@@ -35,6 +35,15 @@
 			}
 		});
 
+		$('.wedding-videos .card .card-container').hover(
+			function() {
+				$( this ).find('.polarized').css('background-color','rgba(0,0,0,0.444)');
+			  }, function() {
+				$( this ).find('.polarized').css('background-color','transparent');
+			  },
+
+		);
+
 	});
 
 })(jQuery, this);
