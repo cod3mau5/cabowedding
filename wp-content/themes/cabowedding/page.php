@@ -1,5 +1,7 @@
 <?php get_header(); ?>
-
+	<script>
+		console.log('###########___ESTE ES EL PAGE.PHP___###########')
+	</script>
 	<main role="main">
 		<!-- section -->
 		<section>
