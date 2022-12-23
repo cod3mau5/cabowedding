@@ -14,6 +14,7 @@
 /*------------------------------------*\
 	Theme Support
 \*------------------------------------*/
+require get_template_directory() .'/includes/shortcodes.php';
 
 if (!isset($content_width))
 {
@@ -61,7 +62,15 @@ if (function_exists('add_theme_support'))
 /*------------------------------------*\
 	Functions
 \*------------------------------------*/
+function my_acf_google_map_api( $api ){
+    
+    $api['key'] = 'AIzaSyDl3QdpavEMHbNxiU9AqmO577Hir0EZ_Ho';
+    
+    return $api;
+    
+}
 
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 // HTML5 Blank navigation
 function cabowedding_nav()
 {

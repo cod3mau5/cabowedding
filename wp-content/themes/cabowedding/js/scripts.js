@@ -41,7 +41,6 @@
 			  }, function() {
 				$( this ).find('.polarized').css('background-color','transparent');
 			  },
-
 		);
 
 	});

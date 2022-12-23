@@ -41,15 +41,15 @@
         <!-- <section class="page-content">
 
             <div class="home-container">
-            <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-                    <h1 <?php post_class(); ?>>
-                        <?php the_content(); ?>
+            <?php # if (have_posts()): while (have_posts()) : the_post(); ?>
+                    <h1 <?php # post_class(); ?>>
+                        <?php # the_content(); ?>
                     </h1>
-                <?php endwhile; ?>
+                <?php # endwhile; ?>
 
-                <?php else: ?>
-                    <h2><?php _e( 'Sorry, nothing to display.', 'cabowedding' ); ?></h2>
-                <?php endif; ?>
+                <?php # else: ?>
+                    <h2><?php # _e( 'Sorry, nothing to display.', 'cabowedding' ); ?></h2>
+                <?php # endif; ?>
             </div>
 
         </section> -->
@@ -217,7 +217,12 @@
             <button>LET'S DO THIS!</button>
         </section>
         <hr data-content="Our Location" />
-        <section id="map"></section>
+        <section class="map">
+            <?php 
+                $ubication=esc_attr(get_field('shortcode'));
+            ?>
+            <?php echo $ubication ?>
+        </section>
 	</main>
 
 
