@@ -53,7 +53,9 @@ body {
 main{
 	background: #eee;
 }
-
+h1, h2, h3, h4, h5{
+	margin: 0!important;
+}
 /* helpers */
 .main-text{
 	font-family: var(--mainText);
@@ -127,9 +129,7 @@ a:hover,
 a:active {
 	outline:0;
 }
-h1,h2,h3,h4,h5 {
-    margin: -1px!important;
-}
+
 input:focus {
 	outline:0;
 	border:1px solid #04A4CC;
@@ -345,7 +345,7 @@ hr[data-content]::after {
     PAGES
 \*------------------------------------*/
 
-/* HOME */
+/* ___HOME___ */
 .welcome-text{
 	background: hsla(356, 73%, 78%, 1);
 	background: radial-gradient(circle, hsla(356, 73%, 78%, 1) 13%, hsla(356, 77%, 75%, 1) 62%, hsla(356, 78%, 73%, 1) 78%);
@@ -376,6 +376,31 @@ hr[data-content]::after {
 .presentation p,.presentation p *{
 	font-size: 1.777rem;
 	font-family: var(--secondText);
+}
+
+/* long presentation */
+.long-presentation{
+	padding: 2rem;
+}
+.long-presentation .row{
+	width: 100%;
+	margin-top: .5rem;
+	margin-bottom: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+.long-presentation .row{
+	display: flex;
+	flex-direction: column;
+}
+.long-presentation .row .column:nth-child(1){
+	width: 100%;
+	min-height: 450px;
+}
+.long-presentation .row .column:nth-child(2) p{
+	font-size: 1.777rem;
+	font-family: var(--secondText2);
+	padding: 3rem 1rem;
 }
 
 /* our services */
@@ -502,34 +527,62 @@ section.wedding-videos{
 	transition: ease-in-out;
 	color: #444;
 }
-/* long presentation */
-.long-presentation{
+
+/* ___CONTACT___ */
+/* contact-container */
+.contact-container{
 	padding: 2rem;
 }
-.long-presentation .row{
-	width: 100%;
-	margin-top: .5rem;
-	margin-bottom: .5rem;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-}
-.long-presentation .row{
+.contact-container .row{
 	display: flex;
 	flex-direction: column;
 }
-.long-presentation .row .column:nth-child(1){
+.contact-container .row .ubicacion{
 	width: 100%;
-	min-height: 450px;
-}
-.long-presentation .row .column:nth-child(2) p{
 	font-size: 1.777rem;
-	font-family: var(--secondText2);
-	padding: 3rem 1rem;
+	font-family: var(--secondText);
+	padding: 1rem;
+}
+.contact-container .row .ubicacion:nth-child(1){
+	display: flex;
+	align-items: center;
+}
+.contact-container .row input,
+.contact-container .row textarea{
+	max-width: 100%;
+	border: 1px solid var(--main-pink);
+}
+.contact-container .row label{
+	color: var(--main-pink);
+	font-weight: bolder;
+}
+.contact-container .row p{
+	text-align: center;
+}
+#wpcf7-f50-p22-o1 > form > p:nth-child(6){
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contact-container .row input[type=submit]{
+	background-color: var(--main-pink);
+	color: var(--main-blue);
+	font-weight: bolder;
+	width: 70%;
+}
+
+main .contact{
+	text-align: center;
+    padding-top: 1.5rem!important;
+	font-family: var(--mainText);
+	color: var(--main-pink);
+	font-size: 5rem;
 }
 
 /** Mapa */
 #map {
-    height: 350px;
+    height: 300px;
+	width:100%
 }
 
 /*------------------------------------*\
@@ -1021,6 +1074,18 @@ ul.menu .menu-item a{
 		padding: 3rem;
 		margin-top: 3rem;
 		margin-bottom: 3rem;
+	}
+
+
+
+	.contact-container .row{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	/** Mapa */
+	#map {
+		height: 80%;
+		width:100%
 	}
 
 }

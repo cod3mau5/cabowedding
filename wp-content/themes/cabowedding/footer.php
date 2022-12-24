@@ -39,12 +39,10 @@
 			</footer>
 			<!-- /footer -->
 
-		</div>
-		<!-- /wrapper -->
 
-		<?php if(is_page('home')): ?>
+
+		<?php if(is_page('contact')): ?>
                 <script>
-					alert();
                     const lat = parseFloat(document.querySelector('#lat').value),
                         lng = parseFloat(document.querySelector('#lng').value),
                         zoom = parseInt(document.querySelector('#zoom').value),

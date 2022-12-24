@@ -11,11 +11,7 @@ function gymfitness_ubicacion_shortcode(){
         <input type="hidden" id="zoom" value="<?php echo $ubicacion['zoom']; ?>" />
         <div id="map"></div>
     </div>
-    <!-- <?php 
-        echo '<pre>'; 
-             var_dump($ubicacion); 
-        echo '</pre>';
-    ?> -->
+
 
     <?php
 }

@@ -11,22 +11,21 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
 		<?php wp_head(); ?>
 		<script>
-        // conditionizr.com
-        // configure environment tests
-        conditionizr.config({
-            assets: '<?php echo get_template_directory_uri(); ?>',
-            tests: {}
-        });
+            // conditionizr.com
+            // configure environment tests
+            conditionizr.config({
+                assets: '<?php echo get_template_directory_uri(); ?>',
+                tests: {}
+            });
         </script>
-
 	</head>
 	<body <?php body_class(); ?>>
 
-		<!-- wrapper -->
-		<div class="wrapper">
+
 
 			<!-- header -->
 			<header class="site-header">
@@ -59,11 +58,6 @@
                     </div>
                 </div>
                 <!-- ./barra-navegacion -->
-
-					<div class="tagline text-center">
-						<h1><?php the_field('encabezado_hero'); ?></h1>
-						<p><?php the_field('contenido_hero') ?></p>
-					</div>
 				</div>
 			</header>
 			<!-- /header -->
