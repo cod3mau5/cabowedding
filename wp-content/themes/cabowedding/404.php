@@ -1,3 +1,6 @@
+<script>
+    console.log('###########___ESTE ES EL 404.PHP___###########')
+</script>
 <?php get_header(); ?>
 
 	<main role="main">

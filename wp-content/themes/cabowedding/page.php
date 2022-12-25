@@ -51,7 +51,7 @@
 					<?php endif; ?>
 				</section>
 				<!-- /section -->
-			<?php endif; ?>
+				<?php elseif(is_page('wedding-videos')):?><?php endif; ?>
 	</main>
 
 <?php get_sidebar(); ?>

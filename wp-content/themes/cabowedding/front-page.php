@@ -112,96 +112,27 @@
             
             <div class="home-container">
                 <div class="cards-wrapper">
-                    <div class="card">
-                        <div class="card-container">
-                            <img src="https://pictime1eus1public.azureedge.net/pictures/23/952/23952451/homepage/homepage.jpg?rs=132932211576423715">
-                            <div class="polarized"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
-                                <polygon class="play-btn__svg" points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69"/>
-                                <path class="play-btn__svg" d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z"/>
-                            </svg> 
-                        </div>
-                        <h2 class="title">Andrea & Todd</h2>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A in esse, saepe assumenda aliquam amet iusto neque.
-                            Eligendi, eos reiciendis a sunt magnam, perferendis itaque aspernatur eius praesentium, minima est!
-                        </p>
-                    </div>                 
-                    <div class="card">
-                        <div class="card-container">
-                            <img src="https://pictimecloudaf-a.azureedge.net/pictures/18/484/18484609/homepage/homepage.jpg?rs=132590247400350223">
-                            <div class="polarized"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
-                                <polygon class="play-btn__svg" points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69"/>
-                                <path class="play-btn__svg" d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z"/>
-                            </svg> 
-                        </div>
-                        <h2 class="title">Ella & Josh</h2>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A in esse, saepe assumenda aliquam amet iusto neque.
-                            Eligendi, eos reiciendis a sunt magnam, perferendis itaque aspernatur eius praesentium, minima est!
-                        </p>
-                    </div>   
-                    <div class="card">
-                        <div class="card-container">
-                            <img src="https://pictime1eus1public.azureedge.net/pictures/19/663/19663091/homepage/homepage.jpg?rs=132680940528304883">
-                            <div class="polarized"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
-                                <polygon class="play-btn__svg" points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69"/>
-                                <path class="play-btn__svg" d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z"/>
-                            </svg> 
-                        </div>
-                        <h2 class="title">Whitnee & Jeremy</h2>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A in esse, saepe assumenda aliquam amet iusto neque.
-                            Eligendi, eos reiciendis a sunt magnam, perferendis itaque aspernatur eius praesentium, minima est!
-                        </p>
-                    </div>   
-                    <div class="card">
-                        <div class="card-container">
-                            <img src="https://pictime1eus1public.azureedge.net/pictures/21/70/21070293/homepage/homepage.jpg?rs=132776895848323135">
-                            <div class="polarized"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
-                                <polygon class="play-btn__svg" points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69"/>
-                                <path class="play-btn__svg" d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z"/>
-                            </svg> 
-                        </div>
-                        <h2 class="title">Mei & Joseph</h2>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A in esse, saepe assumenda aliquam amet iusto neque.
-                            Eligendi, eos reiciendis a sunt magnam, perferendis itaque aspernatur eius praesentium, minima est!
-                        </p>
-                    </div>  
-                    <div class="card">
-                        <div class="card-container">
-                            <img src="https://pictime1eus1public.azureedge.net/pictures/20/608/20608547/homepage/homepage.jpg?rs=132877138325005471">
-                            <div class="polarized"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
-                                <polygon class="play-btn__svg" points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69"/>
-                                <path class="play-btn__svg" d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z"/>
-                            </svg> 
-                        </div>
-                        <h2 class="title">Lisa & Kevin</h2>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A in esse, saepe assumenda aliquam amet iusto neque.
-                            Eligendi, eos reiciendis a sunt magnam, perferendis itaque aspernatur eius praesentium, minima est!
-                        </p>
-                    </div>                 
-                    <div class="card">
-                        <div class="card-container">
-                            <img src="https://pictime1eus1public.azureedge.net/pictures/20/538/20538644/homepage/homepage.jpg?rs=132742987844442852">
-                            <div class="polarized"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
-                                <polygon class="play-btn__svg" points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69"/>
-                                <path class="play-btn__svg" d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z"/>
-                            </svg> 
-                        </div>
-                        <h2 class="title">Christy & Alex</h2>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A in esse, saepe assumenda aliquam amet iusto neque.
-                            Eligendi, eos reiciendis a sunt magnam, perferendis itaque aspernatur eius praesentium, minima est!
-                        </p>
-                    </div> 
+
+                <?php  $videos= new WP_Query(['post_type' => 'wedding-video']);?>
+
+                    <?php while($videos->have_posts()): $videos->the_post();?>
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="card">
+                                <div class="card-container">
+                                    <?php the_post_thumbnail(); ?>
+                                    <div class="polarized"></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                                        <polygon class="play-btn__svg" points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69"/>
+                                        <path class="play-btn__svg" d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z"/>
+                                    </svg> 
+                                </div>
+                                <h2 class="title"><?php the_title(); ?></h2>
+                                <p>
+                                    <?php the_excerpt(); ?>
+                                </p>
+                            </div>
+                        </a>
+                    <?php endwhile; wp_reset_postdata();?>
                 </div>
             </div>
             
@@ -214,7 +145,9 @@
         height: 633px;
         background-size: cover;">
             <h2 class="text-center">Contact me about your wedding or couple session so we can start dreaming about it together!</h2>
-            <button>LET'S DO THIS!</button>
+            <a href="contact/">
+                <button>LET'S DO THIS!</button>
+            </a>
         </section>
         <hr data-content="Our Location" />
         <section class="map">

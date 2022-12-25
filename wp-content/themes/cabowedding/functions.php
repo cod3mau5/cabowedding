@@ -34,13 +34,13 @@ if (function_exists('add_theme_support'))
     add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
-    add_theme_support('custom-background', array(
+    add_theme_support('custom-background', [
 	'default-color' => 'FFF',
 // 	'default-image' => get_template_directory_uri() . '/img/bg.jpg'
-    ));
+    ]);
 
     // Add Support for Custom Header - Uncomment below if you're going to use
-    add_theme_support('custom-header', array(
+    add_theme_support('custom-header', [
 	'default-image'			=> get_template_directory_uri() . '/img/headers/default.jpg',
 	'header-text'			=> false,
 	'default-text-color'		=> '000',
@@ -50,7 +50,7 @@ if (function_exists('add_theme_support'))
 // 	'wp-head-callback'		=> $wphead_cb,
 // 	'admin-head-callback'		=> $adminhead_cb,
 // 	'admin-preview-callback'	=> $adminpreview_cb
-    ));
+    ]);
 
     // Enables post and comment RSS feed links to head
     add_theme_support('automatic-feed-links');
@@ -62,37 +62,36 @@ if (function_exists('add_theme_support'))
 /*------------------------------------*\
 	Functions
 \*------------------------------------*/
-function my_acf_google_map_api( $api ){
-    
-    $api['key'] = 'AIzaSyDl3QdpavEMHbNxiU9AqmO577Hir0EZ_Ho';
-    
-    return $api;
-    
-}
 
+//  ACTIVATE GOOGLE MAPS API KEY
+function my_acf_google_map_api( $api ){
+    $api['key'] = 'AIzaSyDl3QdpavEMHbNxiU9AqmO577Hir0EZ_Ho';
+    return $api; 
+}
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
 // HTML5 Blank navigation
 function cabowedding_nav()
 {
 	wp_nav_menu(
-	array(
-		'theme_location'  => 'header-menu',
-		'menu'            => '',
-		'container'       => 'div',
-		'container_class' => 'menu-{menu slug}-container',
-		'container_id'    => '',
-		'menu_class'      => 'menu',
-		'menu_id'         => '',
-		'echo'            => true,
-		'fallback_cb'     => 'wp_page_menu',
-		'before'          => '',
-		'after'           => '',
-		'link_before'     => '',
-		'link_after'      => '',
-		'items_wrap'      => '<ul>%3$s</ul>',
-		'depth'           => 0,
-		'walker'          => ''
-		)
+        [
+            'theme_location'  => 'header-menu',
+            'menu'            => '',
+            'container'       => 'div',
+            'container_class' => 'menu-{menu slug}-container',
+            'container_id'    => '',
+            'menu_class'      => 'menu',
+            'menu_id'         => '',
+            'echo'            => true,
+            'fallback_cb'     => 'wp_page_menu',
+            'before'          => '',
+            'after'           => '',
+            'link_before'     => '',
+            'link_after'      => '',
+            'items_wrap'      => '<ul>%3$s</ul>',
+            'depth'           => 0,
+            'walker'          => ''
+        ]
 	);
 }
 
@@ -101,13 +100,13 @@ function cabowedding_header_scripts()
 {
     if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
 
-    	wp_register_script('conditionizr', get_template_directory_uri() . '/js/lib/conditionizr-4.3.0.min.js', array(), '4.3.0'); // Conditionizr
+    	wp_register_script('conditionizr', get_template_directory_uri() . '/js/lib/conditionizr-4.3.0.min.js', [], '4.3.0'); // Conditionizr
         wp_enqueue_script('conditionizr'); // Enqueue it!
 
-        wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
+        wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', [], '2.7.1'); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!
 
-        wp_register_script('caboweddingscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
+        wp_register_script('caboweddingscripts', get_template_directory_uri() . '/js/scripts.js', ['jquery'], '1.0.0'); // Custom scripts
         wp_enqueue_script('caboweddingscripts'); // Enqueue it!
     }
 }
@@ -116,7 +115,7 @@ function cabowedding_header_scripts()
 function cabowedding_conditional_scripts()
 {
     if (is_page('pagenamehere')) {
-        wp_register_script('scriptname', get_template_directory_uri() . '/js/scriptname.js', array('jquery'), '1.0.0'); // Conditional script(s)
+        wp_register_script('scriptname', get_template_directory_uri() . '/js/scriptname.js', ['jquery'], '1.0.0'); // Conditional script(s)
         wp_enqueue_script('scriptname'); // Enqueue it!
     }
 }
@@ -124,22 +123,22 @@ function cabowedding_conditional_scripts()
 // Load HTML5 Blank styles
 function cabowedding_styles()
 {
-    wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all');
+    wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', [], '1.0', 'all');
     wp_enqueue_style('normalize'); // Enqueue it!
     
 
-    wp_register_style('cabowedding', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
+    wp_register_style('cabowedding', get_template_directory_uri() . '/style.css', [], '1.0', 'all');
     wp_enqueue_style('cabowedding'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation
 function register_html5_menu()
 {
-    register_nav_menus(array( // Using array to specify more menus if needed
+    register_nav_menus([ // Using array to specify more menus if needed
         'header-menu' => __('Header Menu', 'cabowedding'), // Main Navigation
         'sidebar-menu' => __('Sidebar Menu', 'cabowedding'), // Sidebar Navigation
         'extra-menu' => __('Extra Menu', 'cabowedding') // Extra Navigation if needed (duplicate as many as you need!)
-    ));
+    ]);
 }
 
 // Remove the <div> surrounding the dynamic navigation to cleanup markup
@@ -152,7 +151,7 @@ function my_wp_nav_menu_args($args = '')
 // Remove Injected classes, ID's and Page ID's from Navigation <li> items
 function my_css_attributes_filter($var)
 {
-    return is_array($var) ? array() : '';
+    return is_array($var) ? [] : '';
 }
 
 // Remove invalid rel attribute values in the categorylist
@@ -183,7 +182,7 @@ function add_slug_to_body_class($classes)
 if (function_exists('register_sidebar'))
 {
     // Define Sidebar Widget Area 1
-    register_sidebar(array(
+    register_sidebar([
         'name' => __('Widget Area 1', 'cabowedding'),
         'description' => __('Description for this widget-area...', 'cabowedding'),
         'id' => 'widget-area-1',
@@ -191,10 +190,10 @@ if (function_exists('register_sidebar'))
         'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'
-    ));
+    ]);
 
     // Define Sidebar Widget Area 2
-    register_sidebar(array(
+    register_sidebar([
         'name' => __('Widget Area 2', 'cabowedding'),
         'description' => __('Description for this widget-area...', 'cabowedding'),
         'id' => 'widget-area-2',
@@ -202,17 +201,17 @@ if (function_exists('register_sidebar'))
         'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'
-    ));
+    ]);
 }
 
 // Remove wp_head() injected Recent Comment styles
 function my_remove_recent_comments_style()
 {
     global $wp_widget_factory;
-    remove_action('wp_head', array(
+    remove_action('wp_head', [
         $wp_widget_factory->widgets['WP_Widget_Recent_Comments'],
         'recent_comments_style'
-    ));
+    ]);
 }
 
 // Pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
@@ -220,12 +219,12 @@ function html5wp_pagination()
 {
     global $wp_query;
     $big = 999999999;
-    echo paginate_links(array(
+    echo paginate_links([
         'base' => str_replace($big, '%#%', get_pagenum_link($big)),
         'format' => '?paged=%#%',
         'current' => max(1, get_query_var('paged')),
         'total' => $wp_query->max_num_pages
-    ));
+    ]);
 }
 
 // Custom Excerpts
@@ -338,7 +337,7 @@ function caboweddingcomments($comment, $args, $depth)
 	<?php comment_text() ?>
 
 	<div class="reply">
-	<?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+	<?php comment_reply_link(array_merge( $args, ['add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']])) ?>
 	</div>
 	<?php if ( 'div' != $args['style'] ) : ?>
 	</div>
@@ -355,7 +354,7 @@ add_action('wp_print_scripts', 'cabowedding_conditional_scripts'); // Add Condit
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'cabowedding_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
-add_action('init', 'create_post_type_html5'); // Add our Cabo Wedding Custom Post Type
+add_action('init', 'create_post_type_wedding_videos'); // Add our Wedding Video Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
@@ -405,43 +404,40 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 	Custom Post Types
 \*------------------------------------*/
 
-// Create 1 Custom Post type for a Demo, called HTML5-Blank
-function create_post_type_html5()
+// Create 1 Custom Post type for a Demo, called wedding-videos
+function create_post_type_wedding_videos()
 {
-    register_taxonomy_for_object_type('category', 'html5-blank'); // Register Taxonomies for Category
-    register_taxonomy_for_object_type('post_tag', 'html5-blank');
-    register_post_type('html5-blank', // Register Custom Post Type
-        array(
-        'labels' => array(
-            'name' => __('Cabo Wedding Custom Post', 'cabowedding'), // Rename these to suit
-            'singular_name' => __('Cabo Wedding Custom Post', 'cabowedding'),
-            'add_new' => __('Add New', 'cabowedding'),
-            'add_new_item' => __('Add New Cabo Wedding Custom Post', 'cabowedding'),
-            'edit' => __('Edit', 'cabowedding'),
-            'edit_item' => __('Edit Cabo Wedding Custom Post', 'cabowedding'),
-            'new_item' => __('New Cabo Wedding Custom Post', 'cabowedding'),
-            'view' => __('View Cabo Wedding Custom Post', 'cabowedding'),
-            'view_item' => __('View Cabo Wedding Custom Post', 'cabowedding'),
-            'search_items' => __('Search Cabo Wedding Custom Post', 'cabowedding'),
-            'not_found' => __('No Cabo Wedding Custom Posts found', 'cabowedding'),
-            'not_found_in_trash' => __('No Cabo Wedding Custom Posts found in Trash', 'cabowedding')
-        ),
-        'menu_icon'=>'dashicons-video-alt2',
-        'public' => true,
-        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
-        'has_archive' => true,
-        'supports' => array(
-            'title',
-            'editor',
-            'excerpt',
-            'thumbnail'
-        ), // Go to Dashboard Custom HTML5 Blank post for supports
-        'can_export' => true, // Allows export in Tools > Export
-        'taxonomies' => array(
-            'post_tag',
-            'category'
-        ) // Add Category and Post Tags support
-    ));
+    register_taxonomy_for_object_type('category', 'wedding-videos'); // Register Taxonomies for Category
+    // register_taxonomy_for_object_type('post_tag', 'wedding-videos');
+    register_post_type('wedding-video', // Register Custom Post Type
+        [
+            'labels' => [
+                'name' => __('Wedding Videos', 'cabowedding'), // Rename these to suit
+                'singular_name' => __('Wedding Video', 'cabowedding'),
+                'add_new' => __('Add New', 'cabowedding'),
+                'add_new_item' => __('Add New Wedding Video', 'cabowedding'),
+                'edit' => __('Edit', 'cabowedding'),
+                'edit_item' => __('Edit Wedding Video', 'cabowedding'),
+                'new_item' => __('New Wedding Video', 'cabowedding'),
+                'view' => __('View Wedding Video', 'cabowedding'),
+                'view_item' => __('View Wedding Video', 'cabowedding'),
+                'search_items' => __('Search Wedding Videos', 'cabowedding'),
+                'not_found' => __('No Wedding Videos found', 'cabowedding'),
+                'not_found_in_trash' => __('No Wedding Videos found in Trash', 'cabowedding')
+            ],
+            'menu_icon'=>'dashicons-video-alt2',
+            'public' => true,
+            'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+            'has_archive' => true,
+            'supports' => ['title','editor','excerpt','thumbnail'], // Go to Dashboard Custom HTML5 Blank post for supports
+            'show_in_admin_bar'     => true,
+            'show_in_nav_menus'     => true,
+            'can_export' => true, // Allows export in Tools > Export
+            'taxonomies' => ['category'], // Add Category and Post Tags support
+            'publicly_queryable'    => true,
+            'capability_type'       => 'page',
+        ]
+    );
 }
 
 /*------------------------------------*\

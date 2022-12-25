@@ -220,6 +220,13 @@ input:focus {
 	src: url(https://fonts.gstatic.com/s/greatvibes/v14/RWmMoKWR9v4ksMfaWd_JN9XFiaQ.woff2) format('woff2');
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
+  @font-face {
+	font-family: 'Addington';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('//static.showit.co/file/3XH_adjMRg6caRf-ETwvVg/107330/addingtoncf-thin-webfont.woff');
+}
   
 
 /*------------------------------------*\
@@ -242,6 +249,11 @@ input:focus {
     max-width: 968px;
     width: 75%;
     margin: 0 auto;
+}
+.wedding-videos-container{
+	max-width: 1200px;
+	width: 92%;
+	margin: 0 auto;
 }
 /* header */
 .site-header {
@@ -463,6 +475,7 @@ section.wedding-videos{
     color: var(--main-pink);
     line-height: .777;
 	margin-top: 1.5rem!important;
+	text-transform: capitalize;
 }
 .wedding-videos .card img{
 	height: 100%;
@@ -584,6 +597,78 @@ main .contact{
     height: 300px;
 	width:100%
 }
+/* ___WEDDING VIDEOS___ */
+#wedding-videos{
+	padding: 1.5rem 0px;
+}
+#wedding-videos .title *{
+	text-align: center;
+}
+#wedding-videos .title small{
+	display: block;
+}
+#wedding-videos h1{
+	font-family: 'Addington'!important;
+	text-transform: capitalize!important;
+	color: rgba(46,44,44,1);
+	font-weight: 400;
+	font-size: 3.3rem;
+	letter-spacing: .9;
+	margin-top: 1rem;
+}
+#wedding-videos small{
+	text-align: center;
+}
+.wedding-videos-container{
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.wedding-videos-container .grid-videos {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 50px;
+	margin: 20px;
+	margin: 20px auto;
+  }
+
+  .wedding-videos-container .grid-videos .v-card{
+	cursor: pointer;
+  }
+  .wedding-videos-container .grid-videos .v-card .v-card-body{
+	position: relative;
+	height: 265px;
+  }
+  .wedding-videos-container .grid-videos .v-card .v-card-body img{
+	height: 100%;
+	object-fit: cover;
+  }
+  .wedding-videos-container .grid-videos .v-card .v-card-body h3{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	position: absolute;
+    padding: 1rem 2rem;
+    background: blueviolet;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, 130%);
+	height: 41px;
+    width: 60%;
+    text-align: center;
+	background-color: var(--main-pink);
+	color: var(--main-blue);
+	font-family: 'Addington';
+	text-transform: uppercase;
+	box-shadow: 1px 3px 18px -4px rgba(0,0,0,0.69);
+  }
+
+  @media (max-width: 600px) {
+	.wedding-videos-container .grid-videos {
+	  grid-template-columns: repeat(1, 1fr);
+	}
+  }
 
 /*------------------------------------*\
     IMAGES
