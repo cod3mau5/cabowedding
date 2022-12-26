@@ -3,7 +3,7 @@
 </script>
 <?php get_header();?>
 
-    <main class="contenedor pagina seccion con-sidebar">
+    <main class="py-3" id="page">
         
         <div class="contenido-principal">
             <?php get_template_part('template/loop-paginas'); ?>

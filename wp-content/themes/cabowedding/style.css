@@ -85,6 +85,24 @@ h1, h2, h3, h4, h5{
 	text-align: center;
 }
 
+.my-4{
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+.my-3{
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.py-4{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+.py-3{
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
 .fs-1{
 	font-size: 1rem;
 }
@@ -247,7 +265,7 @@ input:focus {
 }
 .home-container {
     max-width: 968px;
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
 }
 .wedding-videos-container{
@@ -356,7 +374,15 @@ hr[data-content]::after {
 /*------------------------------------*\
     PAGES
 \*------------------------------------*/
-
+/* page titles */
+#page .title{
+	text-transform: capitalize;
+	margin-bottom: 1.5rem!important;
+	font-size: 4.5rem;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 -2px 4px rgba(255, 255, 255, 0.5);
+	color: var(--main-pink);
+	line-height: .6;
+}
 /* ___HOME___ */
 .welcome-text{
 	background: hsla(356, 73%, 78%, 1);
@@ -1080,6 +1106,9 @@ ul.menu .menu-item a{
 
 }
 @media only screen and (min-width:840px) {
+	#page .title{
+		font-size: 6rem;
+	}
 	hr{
 		font-size: 1.7rem;
 	}
@@ -1175,6 +1204,11 @@ ul.menu .menu-item a{
 
 }
 @media only screen and (min-width:1024px) {
+	.home-container {
+		max-width: 968px;
+		width: 75%;
+		margin: 0 auto;
+	}
 
 }
 @media only screen and (min-width:1140px) {

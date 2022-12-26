@@ -2,11 +2,18 @@
 	<script>
 		console.log('###########___ESTE ES EL PAGE.PHP___###########')
 	</script>
-	<main role="main">
+	<main class="py-3" id="page">
 
 
-		
-			<h1 class="<?php if(is_page('contact')): ?>contact<?php endif; ?>"><?php the_title(); ?></h1>
+		<h1 class="text-center main-text-3 title">
+			<?php if(is_page('contact')): ?>
+				contact 
+				<?php else: ?>
+					<?php the_title(); ?>
+			<?php endif; ?>
+		</h1>
+
+
 		
 			<?php if(is_page('contact')): ?>
 				<section class="contact-container">
