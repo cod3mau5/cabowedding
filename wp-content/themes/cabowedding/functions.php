@@ -400,6 +400,24 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 // Shortcodes above would be nested like this -
 // [html5_shortcode_demo] [html5_shortcode_demo_2] Here's the page title! [/html5_shortcode_demo_2] [/html5_shortcode_demo]
 
+    // Cuando el tema es activado
+    function cabowedding_setup() {
+
+        // Habilitar imagenes destacadas
+        add_theme_support('post-thumbnails');
+
+        // Titulos SEO
+        add_theme_support('title-tag');
+
+        // Agregar imagenes de tamaño personalizado
+        add_image_size('square', 350, 350, true);
+        add_image_size('portrait', 350, 724, true);
+        add_image_size('cajas', 400, 375, true);
+        add_image_size('mediano', 700, 400, true);
+        add_image_size('blog', 966, 644, true);
+    }
+    add_action('after_setup_theme', 'cabowedding_setup');
+
 /*------------------------------------*\
 	Custom Post Types
 \*------------------------------------*/

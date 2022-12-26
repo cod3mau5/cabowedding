@@ -5,20 +5,21 @@
 
     <main role="main">
 
+        <!-- main video -->
         <div style="padding:44.79% 0 0 0;position:relative;">
             <iframe src="https://player.vimeo.com/video/409924928?h=0c3a18336e&autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" width="100%" height="500px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
             </iframe>
         </div>
 
-
+        <!-- text hero -->
         <section class="welcome-text">
             <div class="home-container">
                 <h3 class="main-text text-center fs-4">Live the wedding you dream of , be the bride you deserve to be!</h3>
             </div>
         </section>
-
 		<!-- /section -->
 
+        <!-- presentation -->
 		<section class="presentation">
             <?php 
                 $title=esc_attr(get_field('presentation')['title']);
@@ -35,11 +36,10 @@
               
             </div>
 		</section>
-
 		<!-- /section -->
 
-        <!-- <section class="page-content">
-
+        <!-- 
+        <section class="page-content">
             <div class="home-container">
             <?php # if (have_posts()): while (have_posts()) : the_post(); ?>
                     <h1 <?php # post_class(); ?>>
@@ -51,8 +51,9 @@
                     <h2><?php # _e( 'Sorry, nothing to display.', 'cabowedding' ); ?></h2>
                 <?php # endif; ?>
             </div>
+        </section> 
+        -->
 
-        </section> -->
         <hr class="main-text" data-content="Our Services" />
 		<section class="our-services">
             
@@ -86,6 +87,7 @@
             </div>
             
 		</section>
+
         <hr data-content="About Our Work" />
         <section class="long-presentation">
             <?php 
@@ -107,7 +109,6 @@
 		</section>
 
         <hr data-content="Wedding Videos" />
-
         <section class="wedding-videos">
             
             <div class="home-container">
@@ -139,16 +140,19 @@
 		</section>
 
         <hr data-content="Ready?" />
-        <section class="call-to-action" style="
-        background-image: linear-gradient(to bottom, #eee, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0)), url('https://images.squarespace-cdn.com/content/v1/5e5a89dc2b74f201b6b58434/b1fabdfa-d797-456b-9a7d-bb328c2ca470/DSC05422+2.jpg?format=2500w');
-        width: 100%;
-        height: 633px;
-        background-size: cover;">
+        <section class="call-to-action" 
+                style="
+                    background-image: linear-gradient(to bottom, #eee, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0)), url('https://images.squarespace-cdn.com/content/v1/5e5a89dc2b74f201b6b58434/b1fabdfa-d797-456b-9a7d-bb328c2ca470/DSC05422+2.jpg?format=2500w');
+                    width: 100%;
+                    height: 633px;
+                    background-size: cover;
+                ">
             <h2 class="text-center">Contact me about your wedding or couple session so we can start dreaming about it together!</h2>
             <a href="contact/">
                 <button>LET'S DO THIS!</button>
             </a>
         </section>
+
         <hr data-content="Our Location" />
         <section class="map">
             <?php 
@@ -156,6 +160,7 @@
             ?>
             <?php echo $ubication ?>
         </section>
+        
 	</main>
 
 

@@ -9,7 +9,6 @@
             <?php get_template_part('template/loop-paginas'); ?>
         </div>
         
-        <?php get_sidebar('clases'); ?>
 
     </main>
 

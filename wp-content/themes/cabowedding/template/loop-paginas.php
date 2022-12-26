@@ -1,8 +1,15 @@
 <?php while(have_posts()): the_post(); ?>
-
+<style>
+    iframe{
+        width: 100%;
+    }
+</style>
     <h1 class="text-center texto-primario"><?php the_title(); ?></h1>
+    <div class="home-container">
+        <?php the_field('the_video') ?>
+    </div>
     <?php 
-
+        
         /*  la funcion the_post_thumbnail() acepta de parametro 
             los siguientes tamaños de imagen:
             'thumbnail','medium','large','full'
@@ -14,10 +21,6 @@
         endif;
         
     ?>
-
-    <?php if(get_post_type() === 'clases'): $horario=get_field('hora_inicio') . ' a ' . get_field('hora_fin');  ?>
-        <p class="informacion-clase"><?php the_field('dias_clase'); ?> - <?php echo $horario ?></p>
-    <?php endif; ?>
 
     <p><?php the_content(); ?></p>
 
