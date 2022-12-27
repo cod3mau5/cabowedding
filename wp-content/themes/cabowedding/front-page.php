@@ -14,7 +14,7 @@
         <!-- text hero -->
         <section class="welcome-text">
             <div class="home-container">
-                <h3 class="main-text text-center fs-4">Live the wedding you dream of , be the bride you deserve to be!</h3>
+                <h3 class="main-text text-center fs-3">Live the wedding you dream of , be the bride you deserve to be!</h3>
             </div>
         </section>
 		<!-- /section -->
@@ -99,7 +99,7 @@
                 <div class="row">
                     <div class="column bg-img" style="background-image: url('https://static.wixstatic.com/media/11062b_98db497e028f4de2960e0f1eaa8c484a~mv2.jpeg/v1/fill/w_633,h_740,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_98db497e028f4de2960e0f1eaa8c484a~mv2.jpeg');"></div>                    
                     <div class="column">
-                        <p>
+                        <p class="main-text">
                             I make the most important occasions in my clients' lives unforgettable and as enjoyable as possible. Through strategic partnerships formed over the years, I have learned to be flexible and adapt to each client's unique needs and preferences. Are you ready for us to start planning your next event? Leave all your stress and worries to me, and focus on enjoying your next celebration.
                         </p>
                     </div>             
@@ -128,7 +128,7 @@
                                     </svg> 
                                 </div>
                                 <h2 class="title"><?php the_title(); ?></h2>
-                                <p>
+                                <p class="main-text">
                                     <?php the_excerpt(); ?>
                                 </p>
                             </div>
@@ -160,7 +160,7 @@
             ?>
             <?php echo $ubication ?>
         </section>
-        
+
 	</main>
 
 

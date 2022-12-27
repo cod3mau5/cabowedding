@@ -59,7 +59,7 @@
 					<?php endif; ?>
 				<!-- /section -->
 				<?php else: ?>
-					<div class="home-container">
+					<div class="home-container main-text" style="margin-top: 3.5rem;">
 						<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 								
 							<!-- article -->

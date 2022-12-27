@@ -15,14 +15,17 @@
 :root {
 	
 	/* colors */
-	--main-blue: #a4eed6;
-	--main-pink: #F0555F;
+	--main-grey: #898ea2!important;
+	--main-gold: #cbb9a8!important;
+	--second-gold:#d39b86!important;
+	--white: #fff;
+	--bg-grey: #262628;
 
-	--fontMenu: 'La Belle Aurore';
-	--mainText: 'Good Vibes';
-	--mainText2:'Handlee';
-	--mainText3:'Tangerine';
-	--mainText4: 'Good Vibes';
+	--fontMenu: 'HKGrotesk-Medium';
+	--mainText: 'TenorSans-Regular';
+	--mainText2:'TenorSans-Regular';
+	--mainText3:'TenorSans-Regular';
+	--mainText4: 'TenorSans-Regular';
 	/* --secondText:'Actor'; */
 	--secondText:'Merienda';
 	--secondText2:'Poiret One';
@@ -58,7 +61,7 @@ h1, h2, h3, h4, h5{
 }
 /* helpers */
 .main-text{
-	font-family: var(--mainText);
+	font-family: var(--mainText)!important;
 }
 .main-text-2{
 	font-family: var(--mainText2);
@@ -163,13 +166,7 @@ input:focus {
 	font-display: swap;
 	src:url('fonts/LaBelleAurore-Regular.ttf') format('truetype');
 }
-@font-face {
-	font-family: 'Good Vibes';
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-	src: url('fonts/GreatVibes-Regular.ttf') format('truetype');;
-}
+
 
 @font-face {
 	font-family: 'Actor';
@@ -245,6 +242,41 @@ input:focus {
 	font-display: swap;
 	src: url('//static.showit.co/file/3XH_adjMRg6caRf-ETwvVg/107330/addingtoncf-thin-webfont.woff');
 }
+
+@font-face {
+    font-family: 'HKGrotesk-Light';
+    font-style: normal;
+	font-display: swap;
+	src: url('fonts/HKGrotesk-Light.woff') format('truetype');
+}
+
+@font-face {
+    font-family: 'HKGrotesk-Regular';
+    font-style: normal;
+	font-display: swap;
+	src: url('fonts/HKGrotesk-Regular.woff') format('truetype');
+}
+
+@font-face {
+    font-family: 'HKGrotesk-Medium';
+    font-style: normal;
+	font-display: swap;
+	src: url('fonts/HKGrotesk-Medium.woff') format('truetype');
+}
+
+@font-face {
+    font-family: 'HKGrotesk-SemiBold';
+    font-style: normal;
+	font-display: swap;
+	src: url('fonts/HKGrotesk-SemiBold.woff') format('truetype');
+}
+@font-face {
+    font-family: 'TenorSans-Regular';
+    font-style: normal;
+	font-display: swap;
+	src: url('fonts/TenorSans-Regular.ttf') format('truetype');
+}
+
   
 
 /*------------------------------------*\
@@ -276,8 +308,7 @@ input:focus {
 /* header */
 .site-header {
 	display: inherit;
-	border-bottom: 3.5px dotted var(--main-pink);
-	border-bottom-style: solid;
+	background-color: var(--bg-grey);
 }
 .site-header .barra-navegacion{
 	display: grid;
@@ -289,10 +320,11 @@ input:focus {
 	line-height: 1.777;
 }
 .site-header .barra-navegacion ul li a{
-	font-family: var(--fontMenu), cursive;
+	font-family: 'HKGrotesk-Medium';
+	text-transform: uppercase;
 	font-weight: bolder;
-	font-size: 2.777rem;
-	color: var(--main-pink);
+	font-size: 2rem;
+	color: var(--white);
 }
 
 /* logo */
@@ -314,7 +346,7 @@ input:focus {
 hr {
 	height: 2px;
 	overflow: visible;
-	color: var(--main-pink);
+	color: var(--main-gold);
 	position: relative;
 	margin: 2em auto;
 	border: none;
@@ -324,7 +356,7 @@ hr {
 }
 hr::before {
 	content: "";
-	background: linear-gradient(to right, transparent, var(--main-pink), transparent);
+	background: linear-gradient(to right, transparent, var(--main-gold), transparent);
 	height: 2px;
 	width: 100%;
 	position: absolute;
@@ -379,20 +411,17 @@ hr[data-content]::after {
 	text-transform: capitalize;
 	margin-bottom: 1.5rem!important;
 	font-size: 4.5rem;
-	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 -2px 4px rgba(255, 255, 255, 0.5);
-	color: var(--main-pink);
+	color: var(--main-gold);
 	line-height: .6;
 }
 /* ___HOME___ */
 .welcome-text{
-	background: hsla(356, 73%, 78%, 1);
-	background: radial-gradient(circle, hsla(356, 73%, 78%, 1) 13%, hsla(356, 77%, 75%, 1) 62%, hsla(356, 78%, 73%, 1) 78%);
-	background: -moz-radial-gradient(circle, hsla(356, 73%, 78%, 1) 13%, hsla(356, 77%, 75%, 1) 62%, hsla(356, 78%, 73%, 1) 78%);
-	background: -webkit-radial-gradient(circle, hsla(356, 73%, 78%, 1) 13%, hsla(356, 77%, 75%, 1) 62%, hsla(356, 78%, 73%, 1) 78%);
+	background: rgb(92,92,97);
+	background: radial-gradient(circle, rgba(92,92,97,1) 0%, rgba(70,70,73,1) 31%, rgba(39,39,41,1) 69%, rgba(38,38,40,1) 100%);
 	padding: 4rem 0px;
 }
 .welcome-text h3{
-	color: var(--main-blue);
+	color: var(--white);
 	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.57);
 }
 
@@ -402,18 +431,18 @@ hr[data-content]::after {
 	padding-bottom: 22px;
 }
 .presentation h1{
-	font-size: 5.777rem;
+	font-size: 4.5rem;
 	line-height: 1;
-	color: var(--main-pink);
+	color: var(--main-gold);
+	word-break: break-word;
 }
 .presentation h2{
 	font-size: 2rem;
-	color: var(--main-blue);
-	text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.79);
+	color: var(--main-grey);
 }
 .presentation p,.presentation p *{
 	font-size: 1.777rem;
-	font-family: var(--secondText);
+	font-family: var(--mainText);
 }
 
 /* long presentation */
@@ -454,11 +483,11 @@ hr[data-content]::after {
 }
 .our-services .card .title{
 	text-align: center;
-    font-size: 5rem;
-    font-family: var(--mainText3);
-    color: var(--main-blue);
-    line-height: .777;
-	text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.89);
+    font-size: 4rem;
+    font-family: var(--mainText);
+    color: var(--second-gold);
+    line-height: 1.4;
+    text-shadow: 2px -1px 5px rgb(0 0 0 / 75%);
     position: absolute;
     top: 50%;
 	left: 50%; 
@@ -476,7 +505,7 @@ hr[data-content]::after {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0,0,0,0.444);
+	background-color: rgba(0,0,0,0.4);
 }
 
 
@@ -496,12 +525,13 @@ section.wedding-videos{
 }
 .wedding-videos .card .title{
 	text-align: center;
-    font-size: 5rem;
-    font-family: var(--mainText3);
-    color: var(--main-pink);
+    font-size: 3.5rem;
+    font-family: var(--fontMenu);
+    color: var(--main-gold);
     line-height: .777;
 	margin-top: 1.5rem!important;
 	text-transform: capitalize;
+	font-weight: 300;
 }
 .wedding-videos .card img{
 	height: 100%;
@@ -579,7 +609,7 @@ section.wedding-videos{
 .contact-container .row .ubicacion{
 	width: 100%;
 	font-size: 1.777rem;
-	font-family: var(--secondText);
+	font-family: var(--fontMenu);
 	padding: 1rem;
 }
 .contact-container .row .ubicacion:nth-child(1){
@@ -589,10 +619,10 @@ section.wedding-videos{
 .contact-container .row input,
 .contact-container .row textarea{
 	max-width: 100%;
-	border: 1px solid var(--main-pink);
+	border: 1px solid var(--main-gold);
 }
 .contact-container .row label{
-	color: var(--main-pink);
+	color: var(--main-gold);
 	font-weight: bolder;
 }
 .contact-container .row p{
@@ -604,8 +634,8 @@ section.wedding-videos{
 	align-items: center;
 }
 .contact-container .row input[type=submit]{
-	background-color: var(--main-pink);
-	color: var(--main-blue);
+	background-color: var(--main-gold);
+	color: var(--white);
 	font-weight: bolder;
 	width: 70%;
 }
@@ -614,7 +644,7 @@ main .contact{
 	text-align: center;
     padding-top: 1.5rem!important;
 	font-family: var(--mainText);
-	color: var(--main-pink);
+	color: var(--main-gold);
 	font-size: 5rem;
 }
 
@@ -683,8 +713,8 @@ main .contact{
 	height: 41px;
     width: 60%;
     text-align: center;
-	background-color: var(--main-pink);
-	color: var(--main-blue);
+	background-color: var(--main-gold);
+	color: var(--main-grey);
 	font-family: 'Addington';
 	text-transform: uppercase;
 	box-shadow: 1px 3px 18px -4px rgba(0,0,0,0.69);
@@ -862,7 +892,7 @@ ul.menu .menu-item a{
 
 @media only screen and (min-width:840px) and (max-width:1024px) {
     ul.menu .menu-item a{
-        font-size: 2.5rem!important;
+        font-size: 1.5rem!important;
     }
 }
 .menu.is-active ul{
@@ -876,7 +906,7 @@ ul.menu .menu-item a{
     justify-content: center;
     row-gap: 1.25rem;
     margin-top: 7rem;
-	background-color: rgba(255,255,255,0.9);
+	background-color: rgba(38, 38, 40,0.977);
 	margin: 0;
 	padding: 0;
 }
@@ -1002,7 +1032,7 @@ ul.menu .menu-item a{
 }
 .burguer-wrapper small{
 	align-self: center;
-	color: var(--main-pink);
+	color: var(--main-gold);
 	font-weight: bolder;
 }
 
@@ -1052,7 +1082,7 @@ ul.menu .menu-item a{
     outline: none;
     opacity: 1;
     transform: rotate(0deg);
-    background-color: var(--main-pink);
+    background-color: var(--main-gold);
     transition: 0.25s ease-in-out;
 }
 
