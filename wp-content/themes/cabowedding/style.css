@@ -706,7 +706,6 @@ main .contact{
     align-items: center;
 	position: absolute;
     padding: 1rem 2rem;
-    background: blueviolet;
     top: 74%;
     left: 50%;
     transform: translate(-50%, 130%);
@@ -714,7 +713,7 @@ main .contact{
     width: 60%;
     text-align: center;
 	background-color: var(--main-gold);
-	color: var(--main-grey);
+	color: var(--white);
 	font-family: 'Addington';
 	text-transform: uppercase;
 	box-shadow: 1px 3px 18px -4px rgba(0,0,0,0.69);
