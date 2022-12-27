@@ -33,7 +33,7 @@
 					
                 <div class="barra-navegacion">
                     <div class="logo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="logo sitio">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="logo sitio">
                     </div>
 
                     <div class="burguer-wrapper">

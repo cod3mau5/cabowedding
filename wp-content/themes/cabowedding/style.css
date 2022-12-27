@@ -18,6 +18,7 @@
 	--main-grey: #898ea2!important;
 	--main-gold: #cbb9a8!important;
 	--second-gold:#d39b86!important;
+	--tird-gold: #d8c983;
 	--white: #fff;
 	--bg-grey: #262628;
 
@@ -324,7 +325,7 @@ input:focus {
 	text-transform: uppercase;
 	font-weight: bolder;
 	font-size: 2rem;
-	color: var(--white);
+	color: var(--tird-gold);
 }
 
 /* logo */
@@ -346,7 +347,7 @@ input:focus {
 hr {
 	height: 2px;
 	overflow: visible;
-	color: var(--main-gold);
+	color: var(--tird-gold);
 	position: relative;
 	margin: 2em auto;
 	border: none;
@@ -916,7 +917,6 @@ ul.menu .menu-item a{
     justify-content: center;
     row-gap: 1.25rem;
     margin-top: 7rem;
-	background-color: rgba(255,255,255,0.9);
 	margin: 0;
 	padding: 0;
 }
