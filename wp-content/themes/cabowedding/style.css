@@ -344,16 +344,16 @@ input:focus {
 	display: inherit;
 }
 /* divider */
-hr {
+hr{
 	height: 2px;
 	overflow: visible;
 	color: var(--tird-gold);
 	position: relative;
 	margin: 2em auto;
 	border: none;
-	padding-top: 90px;
+	padding-top: 45px;
 	padding-bottom: 50px;
-	font-size: .777rem;
+	font-size: .99rem;
 }
 hr::before {
 	content: "";
@@ -654,6 +654,12 @@ main .contact{
     height: 300px;
 	width:100%
 }
+.map.front-page{
+	height: 200px;
+}
+.map.front-page #map{
+	height: 100%;
+}
 /* ___WEDDING VIDEOS___ */
 #wedding-videos{
 	padding: 1.5rem 0px;
@@ -709,15 +715,16 @@ main .contact{
     padding: 1rem 2rem;
     top: 74%;
     left: 50%;
-    transform: translate(-50%, 130%);
 	height: 41px;
     width: 60%;
-    text-align: center;
+    transform: translate(-50%, 130%);
 	background-color: var(--main-gold);
-	color: var(--white);
-	font-family: 'Addington';
 	text-transform: uppercase;
+    text-align: center;
+	font-family: var(--fontMenu)!important;
 	box-shadow: 1px 3px 18px -4px rgba(0,0,0,0.69);
+	color: var(--white);
+	font-weight: 100;
   }
 
   @media (max-width: 600px) {
@@ -1225,10 +1232,17 @@ ul.menu .menu-item a{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 	}
+
 	/** Mapa */
 	#map {
 		height: 80%;
 		width:100%
+	}
+	.map.front-page{
+		height: 250px;
+	}
+	.map.front-page #map{
+		height: 100%;
 	}
 
 }

@@ -23,7 +23,7 @@
 							<div class="v-card">
 								<div class="v-card-body">
 									<?php the_post_thumbnail(); ?>
-									<h3><?php the_title(); ?></h3>
+									<h3 class="text-shadow"><?php the_title(); ?></h3>
 								</div>
 							</div>
 						</a>

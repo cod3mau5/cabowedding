@@ -154,7 +154,7 @@
         </section>
 
         <hr data-content="Our Location" />
-        <section class="map">
+        <section class="map front-page">
             <?php 
                 $ubication=esc_attr(get_field('shortcode'));
             ?>
