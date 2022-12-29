@@ -155,10 +155,7 @@
 
         <hr data-content="Contact Us" />
         <section class="map front-page">
-            <?php 
-                $ubication=get_field('shortcode');
-            ?>
-            <?php echo $ubication ?>
+            <?php echo the_field('shortcode'); ?>
         </section>
 
 	</main>
