@@ -412,7 +412,7 @@ hr[data-content]::after {
 	text-transform: capitalize;
 	margin-bottom: 1.5rem!important;
 	font-size: 4.5rem;
-	color: var(--main-gold);
+	color: var(--main-grey);
 	line-height: .6;
 }
 /* ___HOME___ */
