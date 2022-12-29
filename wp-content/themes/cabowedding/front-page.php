@@ -153,10 +153,10 @@
             </a>
         </section>
 
-        <hr data-content="Our Location" />
+        <hr data-content="Contact Us" />
         <section class="map front-page">
             <?php 
-                $ubication=esc_attr(get_field('shortcode'));
+                $ubication=get_field('shortcode');
             ?>
             <?php echo $ubication ?>
         </section>
