@@ -161,7 +161,7 @@
         </section>
 
         <hr data-content="Contact Us" />
-        <section class="map front-page">
+        <section class="contact-container front-page">
             <?php echo the_field('shortcode'); ?>
         </section>
 

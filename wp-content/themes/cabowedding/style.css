@@ -649,6 +649,68 @@ main .contact{
 	font-size: 5rem;
 }
 
+/* contact front page */
+.contact-container{
+	padding: 2rem;
+}
+.contact-container.front-page{
+	max-width: 720px;
+	margin: 0 auto;
+}
+.contact-container.front-page{
+	display: flex;
+	flex-direction: column;
+}
+.contact-container.front-page .ubicacion{
+	width: 100%;
+	font-size: 1.777rem;
+	font-family: var(--fontMenu);
+	padding: 1rem;
+}
+.contact-container.front-page .ubicacion:nth-child(1){
+	display: flex;
+	align-items: center;
+}
+.contact-container.front-page input,
+.contact-container.front-page textarea{
+	max-width: 100%;
+	border: 1px solid var(--main-gold);
+}
+.contact-container.front-page label{
+	color: var(--main-gold);
+	font-weight: bolder;
+	font-size: 16px;
+}
+.contact-container.front-page p{
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+}
+.contact-container.front-page p{
+	display: flex;
+}
+.contact-container.front-page label,.contact-container.front-page label span,
+.contact-container.front-page input, .contact-container.front-page textarea{
+	width: 100%;
+}
+.contact-container.front-page input, .contact-container.front-page textarea{
+	padding: 10px;
+}
+.contact-container.front-page form p:last-of-type{
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-container.front-page input[type=submit]{
+	background-color: var(--main-gold);
+	color: var(--white);
+	font-weight: bolder;
+	width: 33%;
+	font-size: 17px;
+}
+
+
+
 /** Mapa */
 #map {
     height: 300px;
