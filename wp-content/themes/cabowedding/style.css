@@ -297,7 +297,6 @@ input:focus {
     margin: 0 auto;
 }
 .home-container {
-    max-width: 968px;
     width: 90%;
     margin: 0 auto;
 }
@@ -434,7 +433,7 @@ hr[data-content]::after {
 .presentation h1{
 	font-size: 4.5rem;
 	line-height: 1;
-	color: var(--main-gold);
+	color: var(--tird-gold);
 	word-break: break-word;
 }
 .presentation h2{
@@ -486,7 +485,7 @@ hr[data-content]::after {
 	text-align: center;
     font-size: 4rem;
     font-family: var(--mainText);
-    color: var(--second-gold);
+    color: var(--white);
     line-height: 1.4;
     text-shadow: 2px -1px 5px rgb(0 0 0 / 75%);
     position: absolute;
@@ -709,6 +708,94 @@ main .contact{
 	font-size: 17px;
 }
 
+
+
+/** Testimoniales **/
+.testimoniales {
+    padding: 9rem 0;
+}
+.testimoniales > .text-center{
+	font-size: 4.5rem;
+    line-height: 1;
+    color: var(--main-gold);
+    word-break: break-word;
+	margin-bottom: 2.5rem!important;
+}
+.listado-testimoniales{
+	padding-left: 0px;
+}
+@media only screen and (min-width:840px) {
+	.listado-testimoniales{
+		padding-left: 40px;
+	}
+}
+.home-container.contenedor-testimoniales .bx-wrapper .bx-viewport{
+	overflow: visible!important;
+}
+.testimonial {
+    color: var(--blanco);
+}
+.testimonial blockquote{
+    position: relative;
+	margin: 1rem;
+}
+.testimonial svg{
+	display: block;
+	height: 32px;
+}
+.testimonial svg:last-of-type {
+    display: block;
+    height: 32px;
+    transform: rotate(180deg);
+	float: right;
+}
+.testimonial-footer{
+	margin-top: 3rem;
+}
+@media only screen and (min-width:840px) {
+	.testimonial svg:last-of-type{
+		display: none;
+	}
+	.testimonial-footer{
+		margin-top: 0;
+	}
+	.testimonial blockquote{
+		padding-left: 9rem;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+	.testimonial svg{
+		display: none;
+	}
+	.testimonial blockquote::before {
+		position: absolute;
+		content:'';
+		display: block;
+		top: 0;
+		left: 0;
+		width: 7.77rem;
+		height: 7rem;
+		background-image: url(img/quote.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+}
+
+.testimonial-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-footer img {
+    margin-right: 2rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+.testimonial-footer p {
+    font-weight: 700;
+    color: var(--colorPrimario);
+}
 
 
 /** Mapa */

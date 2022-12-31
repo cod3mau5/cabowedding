@@ -34,6 +34,16 @@
 				}
 			}
 		});
+				    // checamos si estamos en la pag inicio comprobando si existe la seccion testimoniales
+					if($('.listado-testimoniales').length > 0 ) {
+						$('.listado-testimoniales').bxSlider({
+							auto:true,
+							mode: 'fade',
+							speed: 200,
+							stopAutoOnClick:true,
+							autoHover:true
+						});
+					}
 
 		$('.wedding-videos .card .card-container').hover(
 			function() {
@@ -42,6 +52,9 @@
 				$( this ).find('.polarized').css('background-color','transparent');
 			  },
 		);
+
+
+		
 
 	});
 

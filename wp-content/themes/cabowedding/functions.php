@@ -108,8 +108,21 @@ function cabowedding_header_scripts()
 
         wp_register_script('caboweddingscripts', get_template_directory_uri() . '/js/scripts.js', ['jquery'], '1.0.0'); // Custom scripts
         wp_enqueue_script('caboweddingscripts'); // Enqueue it!
+
+      
+            wp_register_script('bxslider', 'https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js', ['jquery'], '1.0.0'); // Custom scripts
+            wp_enqueue_script('bxslider'); // Enqueue it!
+  
+
+
     }
 }
+
+// function cabowedding_scripts_styles(){
+//         // slickNavJS
+//         wp_enqueue_script('slicknavJS', get_template_directory_uri() . '/js/jquery.slicknav.min.js', ['jquery'], '1.0.0', true);
+// }
+// add_action('wp_enqueue_scripts','cabowedding_scripts_styles');
 
 // Load HTML5 Blank conditional scripts
 function cabowedding_conditional_scripts()
@@ -129,6 +142,12 @@ function cabowedding_styles()
 
     wp_register_style('cabowedding', get_template_directory_uri() . '/style.css', [], '1.0', 'all');
     wp_enqueue_style('cabowedding'); // Enqueue it!
+    
+    // bxSliderCSS
+    if(is_page('about-us')):
+        wp_register_style('bxSliderCSS','https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css', [], '4.2.12');
+        wp_enqueue_style('bxSliderCSS'); // Enqueue it!
+    endif;
 }
 
 // Register HTML5 Blank Navigation
