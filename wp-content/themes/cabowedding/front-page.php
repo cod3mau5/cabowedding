@@ -104,7 +104,7 @@
 
             <div class="home-container"> 
                 <div class="row">
-                    <div class="column bg-img" style="background-image: url('http://cabowedding.local/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-30-at-3.20.02-PM.jpeg');"></div>                    
+                    <div class="column bg-img" style="background-image: url('http://caboweddingfilms.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-30-at-3.20.02-PM-1.jpeg');"></div>                    
                     <div class="column">
                         <p class="main-text">
                             I make the most important occasions in my clients' lives unforgettable and as enjoyable as possible. Through strategic partnerships formed over the years, I have learned to be flexible and adapt to each client's unique needs and preferences. Are you ready for us to start planning your next event? Leave all your stress and worries to me, and focus on enjoying your next celebration.
