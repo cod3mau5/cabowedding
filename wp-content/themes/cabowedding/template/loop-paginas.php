@@ -8,12 +8,38 @@
                 border-radius: 4px;
                 margin-top: 2.5rem;
                 margin-bottom: 2.5rem;
+                height:25%;
+            }
+            @media(min-width:375px){
+                .home-container iframe{
+                    height:27%;
+                }
+            }
+            @media(min-width:425px){
+                .home-container iframe{
+                    height:42%;
+                }
+            }
+            @media(min-width:768px){
+                .home-container iframe{
+                    height:77%;
+                }
+            }
+            @media(min-width:1024px){
+                .home-container iframe{
+                    height:84%;
+                }
+            }
+            @media(min-width:1200px){
+                .home-container iframe{
+                    height:88%;
+                }
             }
 
         </style>
     <?php endif; ?>
 
-    <h1 class="text-center main-text-3 title"><?php the_title(); ?></h1>
+    <h1 class="text-center main-text-3 title" style="font-size:30px!important"><?php the_title(); ?></h1>
     
     <div class="home-container">
         <?php if(get_post_type() === 'wedding-video'): ?>

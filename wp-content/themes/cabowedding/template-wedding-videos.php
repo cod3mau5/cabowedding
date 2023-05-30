@@ -10,7 +10,7 @@
 		<!-- section -->
 		<section>
 			<div class="title">
-				<h1>Our Wedding Films</h1>
+				<h1 style="">Our Wedding Films</h1>
 				<small>please click thumbnails to view films</small>
 			</div>
 

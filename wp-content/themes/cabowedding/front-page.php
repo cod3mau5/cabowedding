@@ -19,12 +19,43 @@
         </div>
 
         <!-- text hero -->
-        <section class="welcome-text">
-            <div class="home-container">
-                <h3 class="main-text text-center fs-3">Live the wedding you dream of , be the bride you deserve to be!</h3>
-            </div>
-        </section>
+        <!--<section class="welcome-text">-->
+        <!--    <div class="home-container">-->
+        <!--        <h3 class="main-text text-center fs-3">Live the wedding you dream of , be the bride you deserve to be!</h3>-->
+        <!--    </div>-->
+        <!--</section>-->
 		<!-- /section -->
+		
+        <hr data-content="Wedding Videos" />
+        <section class="wedding-videos">
+            
+            <div class="home-container">
+                <div class="cards-wrapper">
+
+                <?php  $videos= new WP_Query(['post_type' => 'wedding-video']);?>
+
+                    <?php while($videos->have_posts()): $videos->the_post();?>
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="card">
+                                <div class="card-container">
+                                    <?php the_post_thumbnail(); ?>
+                                    <div class="polarized"></div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                                        <polygon class="play-btn__svg" points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69"/>
+                                        <path class="play-btn__svg" d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z"/>
+                                    </svg> 
+                                </div>
+                                <h2 class="title"><?php the_title(); ?></h2>
+                                <p class="main-text">
+                                    <?php the_excerpt(); ?>
+                                </p>
+                            </div>
+                        </a>
+                    <?php endwhile; wp_reset_postdata();?>
+                </div>
+            </div>
+            
+		</section>
 
         <!-- presentation -->
 		<section class="presentation">
@@ -115,36 +146,7 @@
             </div>
 		</section>
 
-        <hr data-content="Wedding Videos" />
-        <section class="wedding-videos">
-            
-            <div class="home-container">
-                <div class="cards-wrapper">
 
-                <?php  $videos= new WP_Query(['post_type' => 'wedding-video']);?>
-
-                    <?php while($videos->have_posts()): $videos->the_post();?>
-                        <a href="<?php the_permalink(); ?>">
-                            <div class="card">
-                                <div class="card-container">
-                                    <?php the_post_thumbnail(); ?>
-                                    <div class="polarized"></div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
-                                        <polygon class="play-btn__svg" points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69"/>
-                                        <path class="play-btn__svg" d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z"/>
-                                    </svg> 
-                                </div>
-                                <h2 class="title"><?php the_title(); ?></h2>
-                                <p class="main-text">
-                                    <?php the_excerpt(); ?>
-                                </p>
-                            </div>
-                        </a>
-                    <?php endwhile; wp_reset_postdata();?>
-                </div>
-            </div>
-            
-		</section>
 
         <hr data-content="Ready?" />
         <section class="call-to-action" 
