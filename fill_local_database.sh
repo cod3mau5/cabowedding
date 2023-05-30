@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Asegurarse de que el repositorio está actualizado
+git fetch
+git pull
+
 # Variables
 DB_USER="u606769855_cabowedding"
 DB_PASSWORD="Red_hat_4944"
