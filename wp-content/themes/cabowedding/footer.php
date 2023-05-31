@@ -8,11 +8,10 @@
 							<div class="col-lg-4">
 								<div class="social-profile">
 									<ul class="social-group">
-										<li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
-										<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-										<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-										<li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
-										<li><a href="#" target="_blank"><i class="fab fa-google"></i></a></li>
+										<li><a href="https://www.facebook.com/profile.php?id=100070421835557&mibextid=LQQJ4d" target="_blank"><i class="fab fa-facebook"></i></a></li>
+										<li><a href="https://instagram.com/cabo.weddingfilms?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fab fa-instagram"></i></a></li>
+										<li><a href="https://vimeo.com/user8647462" target="_blank"><i class="fab fa-youtube"></i></a></li>
+										<li><a href="https://g.co/kgs/9KLJEz" target="_blank"><i class="fab fa-google"></i></a></li>
 									</ul>
 								</div>
 							</div> <!-- social links area -->
