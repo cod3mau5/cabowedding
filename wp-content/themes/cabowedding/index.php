@@ -1,19 +1,26 @@
 <?php get_header(); ?>
 
-	<main role="main">
-		<!-- section -->
-		<section>
+<main role="main">
+    <!-- section -->
+    <section id="blog-section">
 
-			<h1><?php _e( 'Latest Posts', 'cabowedding' ); ?></h1>
+        <!-- <h1><?php _e( 'Our Posts', 'cabowedding' ); ?></h1> -->
 
-			<?php get_template_part('loop'); ?>
+        <div class="grid-container">  <!-- Div envolvente añadido aquí -->
+            <?php get_template_part('loop'); ?>
+        </div>
 
-			<?php get_template_part('pagination'); ?>
+        <?php get_template_part('pagination'); ?>
 
-		</section>
-		<!-- /section -->
-	</main>
+    </section>
+    <!-- /section -->
+</main>
 
 <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
+
+<script>
+    console.log("Hola desde index.php")
+</script>
+

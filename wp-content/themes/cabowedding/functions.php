@@ -430,6 +430,7 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 
         // Agregar imagenes de tamaño personalizado
         add_image_size('square', 350, 350, true);
+        add_image_size('blog_grid',290,193,true);
         add_image_size('portrait', 350, 724, true);
         add_image_size('cajas', 400, 375, true);
         add_image_size('mediano', 700, 400, true);

@@ -1,1 +1,3 @@
-<h1>HELLO, WORLD!</h1>
+<script>
+    console.log("hola desde single-wedding-videos.php");
+</script>

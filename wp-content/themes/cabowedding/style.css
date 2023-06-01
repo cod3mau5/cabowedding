@@ -278,6 +278,22 @@ input:focus {
 	src: url('fonts/TenorSans-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Geologica-Medium';
+    font-style: normal;
+	font-display: swap;
+	src: url('fonts/geologica/Geologica-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Geologica-Thin';
+    font-style: normal;
+	font-display: swap;
+	src: url('fonts/geologica/Geologica-Thin.ttf') format('truetype');
+}
+
+
+
   
 
 /*------------------------------------*\
@@ -810,6 +826,74 @@ main .contact{
 .map.front-page #map{
 	height: 100%;
 }
+/* ___BLOG___ */
+#blog-section{
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: auto;
+    margin: auto;
+    max-width: 1020px;
+    padding: 96px 32px;
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: subpixel-antialiased;
+}	
+	/* Grid layout para las entradas del blog */
+	.grid-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 2rem;
+	}
+	@media screen and (max-width: 800px) {
+		.grid-container {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	
+	@media screen and (max-width: 600px) {
+		.grid-container {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	
+  
+	/* Estilo para los artículos del blog */
+	.grid-container article {
+		position: relative;
+		text-align: center;
+	}
+  
+  /* Estilo para las imágenes de los thumbnails */
+  .grid-container article img {
+	width: 100%;
+	height: auto;
+  }
+  
+  /* Estilo para los títulos de las entradas */
+  	.grid-container article h2 {
+		font-size: 1.5em;
+		margin: 1em 0;
+		font-family: 'Geologica-Thin';
+		text-transform: uppercase;
+	}
+	.grid-container article h2 a{
+		color: var(--tird-gold)!important;
+		padding:3px 20px;
+		background-color: var(--bg-grey);
+	}
+  
+  /* Estilo para el enlace "Read More" */
+  .grid-container article .read-more {
+	position: absolute;
+	bottom: 1em;
+	left: 0;
+	right: 0;
+	text-align: center;
+	transition: color 0.3s ease;
+  }
+  
+  
+
 /* ___WEDDING VIDEOS___ */
 #wedding-videos{
 	padding: 1.5rem 0px;
