@@ -53,9 +53,10 @@ html {
 body {
 	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color:#444;
+	background: #f1faee;
 }
 main{
-	background: #eee;
+	background: #f1faee;
 }
 h1, h2, h3, h4, h5{
 	margin: 0!important;
@@ -325,6 +326,7 @@ input:focus {
 .site-header {
 	display: inherit;
 	background-color: var(--bg-grey);
+	margin-bottom: 25px;
 }
 .site-header .barra-navegacion{
 	display: grid;
@@ -875,6 +877,8 @@ main .contact{
 		margin: 1em 0;
 		font-family: 'Geologica-Thin';
 		text-transform: uppercase;
+		position: relative;
+    	top: -12px;
 	}
 	.grid-container article h2 a{
 		color: var(--tird-gold)!important;
