@@ -7,18 +7,19 @@
         justify-content: center;
         align-items: center;
         height: auto;
-        background-color: #f1faee;
     }
     
     .single-post-container {
         width: 90%;
         max-width: 1020px;
-        background-color: var(--main-grey);
         color: var(--bg-grey);
         font-family: var(--mainText);
         padding: 2em;
         box-shadow: 0 0 10px rgba(0,0,0,0.3);
         transition: box-shadow 0.5s ease;
+        background-size:cover;
+        background-image: url(<?php echo get_template_directory_uri() ?>/img/paper.jpg);
+        
     }
     @media only screen and (min-width: 1440px) {
         .single-post-container {
@@ -52,6 +53,7 @@
         font-size: 3em;
         text-align: center;
         padding: 2.5rem  1.5rem 2rem 2rem;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.77);
     }
 
     .single-post-container .post-details {
@@ -63,6 +65,8 @@
 
     .single-post-container .post-content {
         line-height: 1.6em;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.44);
+        font-size: 1.377rem;
     }
 
     /* CSS para mobile */
