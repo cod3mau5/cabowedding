@@ -326,6 +326,8 @@ input:focus {
 .site-header {
 	display: inherit;
 	background-color: var(--bg-grey);
+}
+.site-header.not-front-page{
 	margin-bottom: 25px;
 }
 .site-header .barra-navegacion{
@@ -840,6 +842,29 @@ main .contact{
     -moz-osx-font-smoothing: auto;
     -webkit-font-smoothing: subpixel-antialiased;
 }	
+
+#blog-section{
+	padding: 1.5rem 0px;
+}
+#blog-section .title *{
+	text-align: center;
+}
+#blog-section .title small{
+	display: block;
+}
+#blog-section h1{
+	font-family: 'Addington'!important;
+	text-transform: capitalize!important;
+	color: rgba(46,44,44,1);
+	font-weight: 400;
+	font-size: 3.3rem;
+	letter-spacing: .9;
+	margin-top: 1rem;
+}
+#blog-section small{
+	text-align: center;
+	margin-bottom: 2.5rem;
+}
 	/* Grid layout para las entradas del blog */
 	.grid-container {
 		display: grid;

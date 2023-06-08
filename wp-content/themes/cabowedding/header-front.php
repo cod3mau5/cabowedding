@@ -26,7 +26,7 @@
 <body <?php body_class(); ?>>
 
 
-        <header class="site-header">
+        <header class="site-header front">
             <div class="container">
                 
                 <div class="barra-navegacion">

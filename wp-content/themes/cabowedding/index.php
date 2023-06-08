@@ -5,7 +5,11 @@
     <!-- section -->
     <section id="blog-section">
 
-        <!-- <h1><?php # _e( 'Our Posts', 'cabowedding' ); ?></h1> -->
+        <div class="title">
+            <h1>Our Blog</h1>
+            <small>please click thumbnails to view post</small>
+        </div>
+
 
         <div class="grid-container">  <!-- Div envolvente añadido aquí -->
             <?php  get_template_part('loop'); ?>

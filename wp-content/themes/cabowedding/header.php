@@ -32,7 +32,7 @@
 
 
 			<!-- header -->
-			<header class="site-header">
+			<header class="site-header not-front-page">
 				<div class="container">
 					
                 <div class="barra-navegacion">
