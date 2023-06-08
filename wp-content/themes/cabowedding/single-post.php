@@ -12,8 +12,9 @@
     
     .single-post-container {
         width: 90%;
-        background-color: var(--bg-grey);
-        color: var(--white);
+        max-width: 1020px;
+        background-color: var(--main-grey);
+        color: var(--bg-grey);
         font-family: var(--mainText);
         padding: 2em;
         box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -26,35 +27,37 @@
         }
     }
 
-
-
     .single-post-container:hover {
         box-shadow: 0 0 20px rgba(0,0,0,0.5);
     }
 
+    .post-thumbnail{
+        text-align: center;
+    }
     .single-post-container .post-thumbnail img {
-        width: 100%;
-        height: auto;
+        width: auto;
+        max-height: 450px;
         margin-bottom: 1em;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .single-post-container .post-info {
-        background-color: var(--bg-grey);
         padding: 2em;
     }
 
     .single-post-container .post-title {
         font-family: var(--secondText);
-        color: var(--tird-gold);
-        font-size: 2.5em;
+        color: #fdc921;
+        font-size: 3em;
         text-align: center;
-        margin: 1em 0;
+        padding: 2.5rem  1.5rem 2rem 2rem;
     }
 
     .single-post-container .post-details {
-        font-size: 0.8em;
-        color: var(--main-grey);
-        margin-bottom: 2em;
+        font-size: 1em;
+        color: var(--bg-grey);
+        margin-bottom: 3em;
         text-align: center;
     }
 
@@ -78,6 +81,18 @@
             <!-- article -->
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+                <!-- post title -->
+                <h1 class="post-title">
+                    <?php the_title(); ?>
+                </h1>
+                <!-- /post title -->
+                <!-- post details -->
+                <div class="post-details">
+                    <span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
+                    <span class="author"><?php _e( 'Published by', 'cabowedding' ); ?> <?php the_author_posts_link(); ?></span>
+                </div>
+                <!-- /post details -->
+                
                 <!-- post thumbnail -->
                 <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
                     <div class="post-thumbnail">
@@ -88,18 +103,8 @@
 
                 <div class="post-info">
 
-                    <!-- post title -->
-                    <h1 class="post-title">
-                        <?php the_title(); ?>
-                    </h1>
-                    <!-- /post title -->
 
-                    <!-- post details -->
-                    <div class="post-details">
-                        <span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-                        <span class="author"><?php _e( 'Published by', 'cabowedding' ); ?> <?php the_author_posts_link(); ?></span>
-                    </div>
-                    <!-- /post details -->
+
 
                     <!-- post content -->
                     <div class="post-content">
@@ -123,6 +128,7 @@
 <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
+
 <script>
     console.log("hola desde single-post.php");
 </script>
